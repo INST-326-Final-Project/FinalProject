@@ -23,4 +23,7 @@
 * Created the Project 4 ReadMe file.
 * Added original Life Expectancy.csv file to team repository.
 * Successfully cleaned the original life expectancy csv file, has been renamed into "cleaned_life_expectancydf.csv" and has been added to team repository.
-* Created annotated bibliography on word document. Will complete once project has been finished.  
+* Created annotated bibliography on word document. Will complete once project has been finished.
+
+## (4/4/21)-Leek
+* Added Side effects to dropValues(): function in life_expectancy_cleaning.py. 
