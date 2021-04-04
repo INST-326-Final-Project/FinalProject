@@ -5,7 +5,11 @@ import tkinter as tk
 from tkinter import filedialog
 
 def dropValues():
-    """Read and drop any missing/null values from the dataset."""
+    """Read and drop any missing/null values from the dataset.
+
+    Side effects:
+        stdout prints file to a specified file path.
+    """
     clean_dataset = pd.read_csv("Life Expectancy.csv", sep=",")
     #Drop null values using the dropna() method.
     clean_dataset.dropna()
@@ -15,5 +19,6 @@ def dropValues():
     #Export the cleaned dataset. User must specify their file path in order to export the new dataframe.
     clean_dataset.to_csv(r'C:\Users\virtu\PycharmProjects\INST326\cleaned_life_expectancydf.csv', index = False, header=True)
     print(clean_dataset)
+
 #Call the function
 dropValues()
