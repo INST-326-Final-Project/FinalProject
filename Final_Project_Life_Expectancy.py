@@ -29,6 +29,9 @@ def check_input():
         Returns:
             print(str): Return the users input if the country name is incorrectly spelled, or doesn't
             exist within the dataset. 
+         
+         Side effects:
+            prints to stdout.
     """
 
 def year():
