@@ -1,3 +1,6 @@
+"""
+Script takes the users input and outputs information & data on a country. 
+"""
 #Import necessary modules.
 import pandas as pd
 import matplotlib.pyplot as plt
