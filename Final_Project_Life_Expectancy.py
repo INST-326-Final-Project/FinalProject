@@ -1,4 +1,4 @@
-#Import necessary modules. 
+#Import necessary modules.
 import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as st
@@ -9,14 +9,18 @@ class dframe:
     
     Attributes:
         user_input(str): user inputs the country name. Value
-        will be passed into the check_input function. 
+            will be passed into the check_input function.
     """
     
     def __init__(self, user_input):
-        """ User inputs the country name. 
+        """ User inputs the country name. Will include each row with the country
+        name and for each year it shows up for.
 
             Args:
-                user_input(str): country name the user inputs. 
+                user_input(str): country name the user inputs.
+                
+            Returns:
+                user_input(str): name of the country
         """
     
     def read_dframe(self, filepath):
@@ -32,7 +36,9 @@ class dframe:
     
 def check_input(user_input):
     """Check the users input and capitalize the country names. Uses the user 
-    input to see what specific country/row it is working with.
+    input to see what specific country/row it is working with. Will have 
+    possible user input names for countries and will correct them if the 
+    capitalization is wrong.
 
         Args:
             user_input(str): The users' input. 
