@@ -33,3 +33,6 @@
 
 ## (4/15/21)-Joon 
 * Added Annotated Bibliography for Life Expectancy.csv file 
+
+## (4/14/21)-Josh
+* Added method for our class and came up with the input idea for our dataframe.
