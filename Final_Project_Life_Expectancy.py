@@ -101,7 +101,9 @@ def population():
 
 def calc_coefficient():
     """Calculate the coefficient (linear regression) for the specified country. 
-    
+    This will use the statsmodels.api module to show linear regression model
+    for each factor in the csv file. Results will include respective p-values 
+    (values thata re less than 0.05 are considered statistically significant).
     """
 
  
