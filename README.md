@@ -39,4 +39,4 @@
 
 ## (4/14/21)
 * Added module docstring with succint description of what the project script does. 
-* Added more details to calc_coefficient function.
+* Added more details & arguments to calc_coefficient, population, adult_mortality, & diphtheria functions. 
