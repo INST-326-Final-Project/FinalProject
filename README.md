@@ -17,7 +17,7 @@
 
 ## Annotated Bibliography (APA Format) 
 * Rajarshi, K. (2018, February 10). Life Expectancy (WHO). Kaggle. https://www.kaggle.com/kumarajarshi/life-expectancy-who
-* CSV file that provides factors affecting life expectancy considering demographic variables, income composition, and mortality rate. Data from a period of 2000 to 2015 for 193 countries. The dataset will answer possible negative or positive correlation between life expectancy with eating habits, smoking, drinking alcohol, lifestyle, or exercise.
+   * CSV file that provides factors affecting life expectancy considering demographic variables, income composition, and mortality rate. Data from a period of 2000 to 2015 for 193 countries. The dataset will answer possible negative or positive correlation between life expectancy with eating habits, smoking, drinking alcohol, lifestyle, or exercise.
 
 ## Status Update (04/2/21)-Leek 
 * Created the Project 4 ReadMe file.
@@ -31,7 +31,7 @@
 ## (4/11/21)-Leek 
 * Added Final_Project_Life_Expectancy.py file to team repository. 
 
-## (4/15/21)-Joon 
+## (4/14/21)-Joon 
 * Added Annotated Bibliography for Life Expectancy.csv file 
 
 ## (4/14/21)-Josh
