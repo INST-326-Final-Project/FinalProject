@@ -21,7 +21,8 @@ class dframe:
         """
     
 def check_input():
-    """Check the users input and capitalize the country names. 
+    """Check the users input and capitalize the country names. Uses the user 
+    input to see what specific country/row it is working with.
 
         Args:
             user_input(str): The users' input. 
