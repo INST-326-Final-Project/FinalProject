@@ -36,3 +36,6 @@
 
 ## (4/14/21)-Josh
 * Added method for our class and came up with the input idea for our dataframe.
+
+## (4/14/21)
+* Added module docstring with succint description of what the project script does. 
