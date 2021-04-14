@@ -94,3 +94,13 @@ def calc_coefficient():
     """Calculate the coefficient (linear regression) for the specified country. 
     
     """
+
+ 
+def main():
+    """Main function
+    
+    """
+    
+    
+if __name__ == "__main__":
+    main(sys.argv[1])
