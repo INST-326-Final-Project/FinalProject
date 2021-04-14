@@ -86,12 +86,20 @@ def alcohol():
 
 def diphtheria():
     """Display a graph of a country's diphtheria factor influencing life expectancy.
-    
+    shows the factor of Diptheria tatnus toxoid & pertussis (DTP3) immunization 
+    amongst young children (1-year olds).
+        
+        Args:
+            user_input(str): country name the user inputs.
     """ 
 
 def adulty_mortality():
     """Display a graph of a country's adult mortality factor influencing life expectancy.
+    Adult mortality rates are presented as the probablility of dying between the 
+    ages of 15 to 60 per 1000 population. 
     
+        Args:
+            user_input(str): country name the user inputs.
     """ 
 
 def population():
