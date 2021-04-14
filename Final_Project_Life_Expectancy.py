@@ -44,7 +44,7 @@ def check_input(user_input):
     capitalization is wrong.
 
         Args:
-            user_input(str): The users' input. 
+            user_input(str): country name the user inputs. 
         
         Returns:
             print(str): Return the users input if the country name is incorrectly spelled, or doesn't
@@ -95,8 +95,11 @@ def adulty_mortality():
     """ 
 
 def population():
-    """Display a graph of a country's population factor influencing life expectancy.
+    """Display a graph of a country's population factor influencing life expectancy. 
+    Populations range within the million to tens of millions. 
     
+        Args:
+            user_input(str): country name the user inputs.
     """
 
 def calc_coefficient():
@@ -104,6 +107,9 @@ def calc_coefficient():
     This will use the statsmodels.api module to show linear regression model
     for each factor in the csv file. Results will include respective p-values 
     (values thata re less than 0.05 are considered statistically significant).
+    
+        Args:
+            user_input(str): country name the user inputs.
     """
 
  
