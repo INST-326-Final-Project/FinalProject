@@ -20,6 +20,14 @@ class dframe:
                 user_input(str): country name the user inputs. 
         """
     
+    def read_dframe(self, filepath):
+        """Method that reads in the "cleaned_life_expectancydf.csv" file and 
+        creates a dataframe with pandas based on the dataset.
+        
+            Args:
+                filepath (str): the "cleaned_life_expectancydf.csv" file 
+        """
+    
 def check_input(user_input):
     """Check the users input and capitalize the country names. Uses the user 
     input to see what specific country/row it is working with.
