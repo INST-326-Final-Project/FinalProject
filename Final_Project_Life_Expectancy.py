@@ -25,7 +25,10 @@ class dframe:
         creates a dataframe with pandas based on the dataset.
         
             Args:
-                filepath (str): the "cleaned_life_expectancydf.csv" file 
+                filepath (str): the "cleaned_life_expectancydf.csv" file
+                
+            Returns:
+                dataframe: dataframe of the csv file
         """
     
 def check_input(user_input):
