@@ -135,8 +135,11 @@ def diphtheria():
     expectancy. Shows the factor of Diptheria tatnus toxoid & pertussis (DTP3) 
     immunization amongst young children (1-year olds).
         
-        Args:
-            user_input(str): country name the user inputs.
+    Args:
+        user_input(str): country name the user inputs.
+    
+    Returns:
+        A graph of the regression between diphtheria and life expectency
     """ 
 
 def adulty_mortality():
@@ -144,16 +147,21 @@ def adulty_mortality():
     expectancy. Adult mortality rates are presented as the probablility of dying
     between the ages of 15 to 60 per 1000 population. 
     
-        Args:
-            user_input(str): country name the user inputs.
+    Args:
+        user_input(str): country name the user inputs.
+    Returns:
+        A graph of the regression between adult_mortality and life expectency
     """ 
 
 def population():
     """Display a graph of a country's population factor influencing life 
     expectancy. Populations range within the million to tens of millions. 
     
-        Args:
-            user_input(str): country name the user inputs.
+    Args:
+        user_input(str): country name the user inputs.
+    
+    Returns:
+        A graph of the regression between population and life expectency
     """
 
 def calc_coefficient():
@@ -162,8 +170,11 @@ def calc_coefficient():
     for each factor in the csv file. Results will include respective p-values 
     (values thata re less than 0.05 are considered statistically significant).
     
-        Args:
-            user_input(str): country name the user inputs.
+    Args:
+        user_input(str): country name the user inputs.
+    
+    Returns:
+        a linear regression statistical model of each factor. 
     """
 
  
