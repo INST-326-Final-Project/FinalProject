@@ -34,7 +34,8 @@ class dframe:
                 filepath (str): the "cleaned_life_expectancydf.csv" file
                 
             Returns:
-                dataframe: dataframe of the csv file
+                dataframe: dataframe of the csv file. This dataframe contains 193 country names,
+                alongside their associated factors. This is a requirement to run the file. 
         """
     
 def check_input(user_input):
