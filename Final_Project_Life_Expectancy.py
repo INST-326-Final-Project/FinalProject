@@ -66,7 +66,8 @@ def year():
     """
 
 def polio():
-    """Display a graph of a country's polio factor influencing life expectancy.
+    """Display a graph of a country's polio factor influencing 
+    life expectancy.
     Polio (Pol3) immunization coverage among 1-year-old infants.
     
         Args:
@@ -157,7 +158,8 @@ def calc_coefficient():
 
  
 def main():
-    """Main function
+    """Main function: Will call the class dframe and 
+    functions outside of the class. 
     
     """
     
