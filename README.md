@@ -42,4 +42,13 @@
 * Added more details & arguments to calc_coefficient, population, adult_mortality, & diphtheria functions. 
 
 ## (4/16/21)-Leek
-* Added details & returns to my assigned functions docstrings.
+* Added details & returns to assigned functions docstrings.
+
+## (4/16/21)- Owen
+* Added details & returns to assigned functions docstrings.
+
+## (4/16/21)- Josh
+* Added details & returns to assigned functions docstrings.
+
+## (4/16/21)- Joon
+* Added details & returns to assigned functions docstrings.
