@@ -74,8 +74,10 @@ def polio():
     """
 
 def total_exp():
-    """Display a graph of a country's total expenditure factor influencing life expectancy.
-    General government expenditure on health as a percentage of total government expenditure. 
+    """Display a graph of a country's total expenditure factor influencing life 
+    expectancy.
+    General government expenditure on health as a percentage of total government 
+    expenditure. 
     
         Args:
             user_input(str): country name the user inputs.
