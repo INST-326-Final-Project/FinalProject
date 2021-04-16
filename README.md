@@ -43,6 +43,7 @@
 
 ## (4/16/21)-Leek
 * Added details & returns to assigned functions docstrings.
+* Addes side effects for all functions with a grpahical output (or table).
 
 ## (4/16/21)- Owen
 * Added details & returns to assigned functions docstrings.
