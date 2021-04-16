@@ -8,8 +8,7 @@ import statsmodels.api as st
 
 #Create the class
 class dframe:
-    """Instantiate events happening from their years, months, days, & 
-    descriptions.  
+    """Instantiate events happening from their years, months, days, & descriptions.  
     
     Attributes:
         user_input(str): user inputs the country name. Value
@@ -35,9 +34,8 @@ class dframe:
                 filepath (str): the "cleaned_life_expectancydf.csv" file
                 
             Returns:
-                dataframe: dataframe of the csv file. This dataframe contains 
-                193 country names, alongside their associated factors. This is 
-                a requirement to run the file. 
+                dataframe: dataframe of the csv file. This dataframe contains 193 country names,
+                alongside their associated factors. This is a requirement to run the file. 
         """
     
 def check_input(user_input):
@@ -50,8 +48,8 @@ def check_input(user_input):
             user_input(str): country name the user inputs. 
         
         Returns:
-            print(str): Return the users input if the country name is 
-            incorrectly spelled, or doesn't exist within the dataset. 
+            print(str): Return the users input if the country name is incorrectly spelled, or doesn't
+            exist within the dataset. 
         
         Side effects:
             prints to stdout.   
@@ -101,9 +99,8 @@ def income_comp():
     """
 
 def alcohol():
-    """Display a graph of a country's alcohol consumption factor influencing 
-        life expectancy. Will analyze the affect of this factor on the 
-        independent variable
+    """Display a graph of a country's alcohol consumption factor influencing life expectancy.
+    Will analyze the affect of this factor on the independent variable
     
     Args:
         user_input(str): The name of the country that this is being analyzed on
