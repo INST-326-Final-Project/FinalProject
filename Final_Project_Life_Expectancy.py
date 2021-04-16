@@ -8,8 +8,8 @@ import statsmodels.api as st
 
 #Create the class
 class dframe:
-    """Instantiate events happening from their years, months, days, & 
-    descriptions.  
+   """Instantiate events happening from their years, months, days, & 
+    descriptions. 
     
     Attributes:
         user_input(str): user inputs the country name. Value
@@ -35,7 +35,7 @@ class dframe:
                 filepath (str): the "cleaned_life_expectancydf.csv" file
                 
             Returns:
-                dataframe: dataframe of the csv file. This dataframe contains 
+                  dataframe: dataframe of the csv file. This dataframe contains 
                 193 country names, alongside their associated factors. This is 
                 a requirement to run the file. 
         """
@@ -51,7 +51,7 @@ def check_input(user_input):
         
         Returns:
             print(str): Return the users input if the country name is 
-            incorrectly spelled, or doesn't exist within the dataset. 
+            incorrectly spelled, or doesn't exist within the dataset.  
         
         Side effects:
             prints to stdout.   
