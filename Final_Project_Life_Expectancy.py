@@ -65,7 +65,10 @@ def year():
         user_input(str): country name the user inputs.
         
     Returns:
-        A graph of the regression betweeen year and life expectency
+        A graph of the regression betweeen year and life expectency.
+    
+     Side effects:
+            outputs graph to stdout.
     """
 
 def polio():
@@ -78,7 +81,10 @@ def polio():
     
     Returns:
         A graph of the regression betweeen polio immunization and life 
-        expectency
+        expectency.
+        
+    Side effects:
+            outputs graph to stdout.
     """
 
 def total_exp():
@@ -91,7 +97,10 @@ def total_exp():
     
     Returns:
         A graph of the regression betweeen governmnet expenditure and life 
-        expectency
+        expectency.
+        
+    Side effects:
+            outputs graph to stdout.
     """
 
 def schooling():
@@ -103,7 +112,10 @@ def schooling():
             derived from
     
     Returns:
-        A graph of the regression betweeen schooling and life expectency
+        A graph of the regression betweeen schooling and life expectency.
+        
+    Side effects:
+            outputs graph to stdout.
     """
 
 def income_comp():
@@ -115,7 +127,10 @@ def income_comp():
             from
     
     Returns:
-        A graph of the regression between income_comp and life expectency
+        A graph of the regression between income_comp and life expectency.
+        
+    Side effects:
+            outputs graph to stdout.
     """
 
 def alcohol():
@@ -127,7 +142,10 @@ def alcohol():
         user_input(str): The name of the country that this is being analyzed on
     
     Returns:
-        A graph of the regression between alcohol and life expectency
+        A graph of the regression between alcohol and life expectency.
+    
+    Side effects:
+            outputs graph to stdout.
     """ 
 
 def diphtheria():
@@ -139,7 +157,10 @@ def diphtheria():
         user_input(str): country name the user inputs.
     
     Returns:
-        A graph of the regression between diphtheria and life expectency
+        A graph of the regression between diphtheria and life expectency.
+        
+    Side effects:
+            outputs graph to stdout.
     """ 
 
 def adulty_mortality():
@@ -150,7 +171,10 @@ def adulty_mortality():
     Args:
         user_input(str): country name the user inputs.
     Returns:
-        A graph of the regression between adult_mortality and life expectency
+        A graph of the regression between adult_mortality and life expectency.
+        
+    Side effects:
+            outputs graph to stdout.
     """ 
 
 def population():
@@ -161,7 +185,10 @@ def population():
         user_input(str): country name the user inputs.
     
     Returns:
-        A graph of the regression between population and life expectency
+        A graph of the regression between population and life expectency.
+        
+    Side effects:
+            outputs graph to stdout.
     """
 
 def calc_coefficient():
@@ -174,7 +201,10 @@ def calc_coefficient():
         user_input(str): country name the user inputs.
     
     Returns:
-        a linear regression statistical model of each factor. 
+        a linear regression statistical model of each factor.
+        
+    Side effects:
+            outputs table to stdout. 
     """
 
  
