@@ -61,8 +61,11 @@ def year():
     """Display a graph of a country's year factor influencing life expectancy. 
     Years range from 2000 to 2015 for each country.  
     
-        Args:
-            user_input(str): country name the user inputs.
+    Args:
+        user_input(str): country name the user inputs.
+        
+    Returns:
+        A graph of the regression betweeen year and life expectency
     """
 
 def polio():
@@ -70,18 +73,25 @@ def polio():
     life expectancy.
     Polio (Pol3) immunization coverage among 1-year-old infants.
     
-        Args:
-            user_input(str): country name the user inputs.
+    Args:
+        user_input(str): country name the user inputs.
+    
+    Returns:
+        A graph of the regression betweeen polio immunization and life 
+        expectency
     """
 
 def total_exp():
     """Display a graph of a country's total expenditure factor influencing life 
-    expectancy.
-    General government expenditure on health as a percentage of total government 
-    expenditure. 
+    expectancy.General government expenditure on health as a percentage of total 
+    government expenditure. 
     
-        Args:
-            user_input(str): country name the user inputs.
+    Args:
+        user_input(str): country name the user inputs.
+    
+    Returns:
+        A graph of the regression betweeen governmnet expenditure and life 
+        expectency
     """
 
 def schooling():
