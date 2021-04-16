@@ -8,7 +8,8 @@ import statsmodels.api as st
 
 #Create the class
 class dframe:
-    """Instantiate events happening from their years, months, days, & descriptions.  
+    """Instantiate events happening from their years, months, days, & 
+    descriptions.  
     
     Attributes:
         user_input(str): user inputs the country name. Value
