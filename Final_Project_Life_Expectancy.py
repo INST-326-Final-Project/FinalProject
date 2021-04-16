@@ -101,8 +101,9 @@ def income_comp():
     """
 
 def alcohol():
-    """Display a graph of a country's alcohol consumption factor influencing life expectancy.
-    Will analyze the affect of this factor on the independent variable
+    """Display a graph of a country's alcohol consumption factor influencing 
+        life expectancy. Will analyze the affect of this factor on the 
+        independent variable
     
     Args:
         user_input(str): The name of the country that this is being analyzed on
