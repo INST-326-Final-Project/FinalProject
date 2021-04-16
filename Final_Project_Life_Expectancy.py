@@ -89,6 +89,8 @@ def schooling():
         user_input(string): The country that schooling will be analyzed and 
             derived from
     
+    Returns:
+        A graph of the regression betweeen schooling and life expectency
     """
 
 def income_comp():
@@ -98,6 +100,9 @@ def income_comp():
     Args:
         user_input(string): The country that the income_comp will be derived 
             from
+    
+    Returns:
+        A graph of the regression between income_comp and life expectency
     """
 
 def alcohol():
@@ -107,6 +112,8 @@ def alcohol():
     Args:
         user_input(str): The name of the country that this is being analyzed on
     
+    Returns:
+        A graph of the regression between alcohol and life expectency
     """ 
 
 def diphtheria():
