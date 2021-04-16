@@ -57,16 +57,24 @@ def check_input(user_input):
 def year():
     """Display a graph of a country's year factor influencing life expectancy.  
     
+        Args:
+            user_input(str): country name the user inputs.
     """
 
 def polio():
-    """Display a graph of a country's polio factor influencing life expectancy.  
+    """Display a graph of a country's polio factor influencing life expectancy.
+    Polio (Pol3) immunization coverage among 1-year-old infants.
     
+        Args:
+            user_input(str): country name the user inputs.
     """
 
 def total_exp():
     """Display a graph of a country's total expenditure factor influencing life expectancy.
+    General government expenditure on health as a percentage of total government expenditure. 
     
+        Args:
+            user_input(str): country name the user inputs.
     """
 
 def schooling():
