@@ -40,3 +40,6 @@
 ## (4/14/21) Leek
 * Added module docstring with succint description of what the project script does. 
 * Added more details & arguments to calc_coefficient, population, adult_mortality, & diphtheria functions. 
+
+## (4/16/21)-Leek
+* Added details & returns to my assigned functions docstrings.
