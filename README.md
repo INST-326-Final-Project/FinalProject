@@ -37,6 +37,6 @@
 ## (4/14/21)-Josh
 * Added method for our class and came up with the input idea for our dataframe.
 
-## (4/14/21)
+## (4/14/21) Leek
 * Added module docstring with succint description of what the project script does. 
 * Added more details & arguments to calc_coefficient, population, adult_mortality, & diphtheria functions. 
