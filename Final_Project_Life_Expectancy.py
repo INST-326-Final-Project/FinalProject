@@ -51,22 +51,22 @@ class dframe:
         
         return output
     
-def check_input(user_input):
-    """Check the users input and capitalize the country names. Uses the user 
-    input to see what specific country/row it is working with. Will have 
-    possible user input names for countries and will correct them if the 
-    capitalization is wrong.
+    def check_input(self, user_input):
+        """Check the users input and capitalize the country names. Uses the user 
+        input to see what specific country/row it is working with. Will have 
+        possible user input names for countries and will correct them if the 
+        capitalization is wrong.
 
-        Args:
-            user_input(str): country name the user inputs. 
+            Args:
+                user_input(str): country name the user inputs. 
         
-        Returns:
-            print(str): Return the users input if the country name is 
-            incorrectly spelled, or doesn't exist within the dataset.  
+            Returns:
+                print(str): Return the users input if the country name is 
+                incorrectly spelled, or doesn't exist within the dataset.  
         
-        Side effects:
-            prints to stdout.   
-    """
+            Side effects:
+                prints to stdout.   
+        """
 
 
 
