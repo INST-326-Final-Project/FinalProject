@@ -47,7 +47,7 @@ class dframe:
         df = pd.read_csv(filepath)
         
         # prints the 15 rows from the dataframe for that country
-        output = df[df["Country"] == self.user_input]
+        output = print(df[df["Country"] == self.user_input])
         
         return output
     
@@ -221,7 +221,7 @@ def calc_coefficient():
     """
 
  
-def main(user_input=0):
+def main(filepath):
     """Main function: Will call the class dframe and 
     functions outside of the class. 
     
