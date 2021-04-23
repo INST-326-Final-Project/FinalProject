@@ -26,6 +26,7 @@ class dframe:
             Returns:
                 user_input(str): name of the country
         """
+        self.user_input = user_input
         self.user_input = input("What country would you like to look at? ")
 
         
