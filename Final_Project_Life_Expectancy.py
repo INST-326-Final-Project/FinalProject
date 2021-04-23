@@ -43,7 +43,7 @@ class dframe:
                 a requirement to run the file. 
         """
         df = pd.read_csv(filepath)
-        return 
+        return df
     
 def check_input(user_input):
     """Check the users input and capitalize the country names. Uses the user 
@@ -61,7 +61,7 @@ def check_input(user_input):
         Side effects:
             prints to stdout.   
     """
-    
+
 
 
 def year():
