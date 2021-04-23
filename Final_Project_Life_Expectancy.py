@@ -16,7 +16,7 @@ class dframe:
             will be passed into the check_input function.
     """
     
-    def __init__(self, user_input):
+    def __init__(self, user_input=0):
         """ User inputs the country name. Will include each row with the country
         name and for each year it shows up for.
 
@@ -225,7 +225,8 @@ def main():
     functions outside of the class. 
     
     """
-    
+    execute = dframe(user_input)
+    execute.read_dframe()
     
 if __name__ == "__main__":
     main(sys.argv[1])
