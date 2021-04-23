@@ -44,7 +44,9 @@ class dframe:
                 a requirement to run the file. 
         """
         df = pd.read_csv(filepath)
-        return df
+        
+        
+        return 
     
 def check_input(user_input):
     """Check the users input and capitalize the country names. Uses the user 
