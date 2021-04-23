@@ -45,8 +45,10 @@ class dframe:
         """
         df = pd.read_csv(filepath)
         
+        # prints the 15 rows from the dataframe for that country
+        output = df[df["Country"] == self.user_input]
         
-        return 
+        return output
     
 def check_input(user_input):
     """Check the users input and capitalize the country names. Uses the user 
