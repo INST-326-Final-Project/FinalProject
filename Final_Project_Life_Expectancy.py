@@ -26,6 +26,9 @@ class dframe:
             Returns:
                 user_input(str): name of the country
         """
+        self.user_input = input("What country would you like to look at? ")
+
+        
     
     def read_dframe(self, filepath):
         """Method that reads in the "cleaned_life_expectancydf.csv" file and 
@@ -39,6 +42,8 @@ class dframe:
                 193 country names, alongside their associated factors. This is 
                 a requirement to run the file. 
         """
+        df = pd.read_csv(filepath)
+        return 
     
 def check_input(user_input):
     """Check the users input and capitalize the country names. Uses the user 
@@ -56,6 +61,8 @@ def check_input(user_input):
         Side effects:
             prints to stdout.   
     """
+    
+
 
 def year():
     """Display a graph of a country's year factor influencing life expectancy. 
