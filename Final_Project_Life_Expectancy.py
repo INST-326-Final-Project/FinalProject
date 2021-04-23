@@ -4,7 +4,8 @@ Script takes the users input and outputs information & data on a country.
 #Import necessary modules.
 import pandas as pd
 import matplotlib.pyplot as plt
-import statsmodels.api as st
+#import statsmodels.api as st
+import sys
 
 #Create the class
 class dframe:
@@ -220,13 +221,13 @@ def calc_coefficient():
     """
 
  
-def main():
+def main(user_input=0):
     """Main function: Will call the class dframe and 
     functions outside of the class. 
     
     """
-    execute = dframe(user_input)
-    execute.read_dframe()
+    execute = dframe(user_input=0)
+    execute.read_dframe(filepath)
     
 if __name__ == "__main__":
     main(sys.argv[1])
