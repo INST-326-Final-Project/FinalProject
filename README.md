@@ -56,3 +56,4 @@
 
 ## (4/23/21)- Josh
 * Worked on the class and functions.
+* Changed the check_input function into a method of the class.
