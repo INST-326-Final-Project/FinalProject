@@ -53,3 +53,6 @@
 
 ## (4/16/21)- Joon
 * Added details & returns to assigned functions docstrings.
+
+## (4/23/21)- Josh
+* Worked on the class and functions.
