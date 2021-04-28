@@ -17,7 +17,7 @@
 
 ## Annotated Bibliography (APA Format) 
 * Rajarshi, K. (2018, February 10). Life Expectancy (WHO). Kaggle. https://www.kaggle.com/kumarajarshi/life-expectancy-who
-   * CSV file that provides factors affecting life expectancy considering demographic variables, income composition, and mortality rate. Data from a period of 2000 to 2015 for 193 countries. The dataset will answer possible negative or positive correlation between life expectancy with eating habits, smoking, drinking alcohol, lifestyle, or exercise.
+   * CSV file that provides factors affecting life expectancy considering demographic variables, income composition, and mortality rate. Data from a period of 2000 to 2015 for        193 countries. The dataset will answer possible negative or positive correlation between life expectancy with year, polio, total expenditure, schooling, income composition      of resources, alcohol, diphtheria, adult Mortality, and population.
 
 ## Status Update (04/2/21)-Leek 
 * Created the Project 4 ReadMe file.
@@ -61,15 +61,6 @@
 ## (4/28/21)- Owen
 * Worked on making methods of functions
 * Adjusted method docstrings
-* Helped fixed def year(self) method (specifically helped with self.df[self.df["Country"] == self.user_input] syntax. 
 
 ## (4/28/21) - Leek
 * Added functiosn to class methods.
-* Worked on diphtheria, adult_mortality, population, & calc_coefficient methods. 
-* Added calc_coefficient() instance call. 
-
-## (4/28/21)- Josh
-* Worked on check_input method
-
-## (4/28/21) - Joon
-* Worked on year, polio, & total_exp methods. 
