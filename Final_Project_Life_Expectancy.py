@@ -17,22 +17,23 @@ class dframe:
             will be passed into the check_input function.
     """
     
-    def __init__(self, user_input=0):
+    def __init__(self, filepath, user_input=0):
         """ User inputs the country name. Will include each row with the country
         name and for each year it shows up for.
 
             Args:
                 user_input(str): country name the user inputs.
+                df (str): dataframe of the file
                 
             Returns:
                 user_input(str): name of the country
         """
         self.user_input = user_input
         self.user_input = input("What country would you like to look at? ")
-
+        self.df = pd.read_csv(filepath)
         
     
-    def read_dframe(self, filepath):
+    def read_dframe(self):
         """Method that reads in the "cleaned_life_expectancydf.csv" file and 
         creates a dataframe with pandas based on the dataset.
         
@@ -44,10 +45,9 @@ class dframe:
                 193 country names, alongside their associated factors. This is 
                 a requirement to run the file. 
         """
-        df = pd.read_csv(filepath)
         
         # prints the 15 rows from the dataframe for that country
-        output = print(df[df["Country"] == self.user_input])
+        output = print(self.df[self.df["Country"] == self.user_input])
         
         return output
     
@@ -67,10 +67,30 @@ class dframe:
             Side effects:
                 prints to stdout.   
         """
-        lower_case = self.user_input.lower()
-        proper_case = self.user_input.title()
-        print(proper_case)
+        
+        if (self.user_input in self.df["Country"].values):
+            print("yes")
+    
+        elif (self.user_input not in self.df["Country"].values):
+            lower = self.user_input.lower()
+            templist = lower.split(" ")
+            print(templist)
             
+            for i in templist:
+                final_title = []
+                always_lower = ["in", "and", "of", "former", "the"]
+                
+                if i not in always_lower:
+                    i = i.title()
+                    final_title.append(i)
+                
+                elif i in always_lower:
+                    i.lower()
+                    final_title.append(i)
+                final_title_output = " ".join(final_title)
+        
+                print(final_title_output)
+        
         
 
     def year(self):
@@ -233,8 +253,8 @@ def main(filepath):
     functions outside of the class. 
     
     """
-    execute = dframe(user_input=0)
-    execute.read_dframe(filepath)
+    execute = dframe(filepath, user_input=0)
+    execute.read_dframe()
     execute.check_input()
     
 if __name__ == "__main__":
