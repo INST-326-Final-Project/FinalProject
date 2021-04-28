@@ -51,7 +51,7 @@ class dframe:
         
         return output
     
-    def check_input(self):
+    def check_input(self, filepath):
         """Check the users input and capitalize the country names. Uses the user 
         input to see what specific country/row it is working with. Will have 
         possible user input names for countries and will correct them if the 
@@ -67,6 +67,7 @@ class dframe:
             Side effects:
                 prints to stdout.   
         """
+        df = pd.read_csv(filepath)
         if (self.user_input in df["Country"].values):
             print("yes")
     
@@ -251,7 +252,7 @@ def main(filepath):
     """
     execute = dframe(user_input=0)
     execute.read_dframe(filepath)
-    execute.check_input()
+    execute.check_input(filepath)
     
 if __name__ == "__main__":
     main(sys.argv[1])
