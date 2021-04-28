@@ -116,50 +116,51 @@ class dframe:
             outputs graph to stdout.
         """
 
-def schooling():
-    """Display a graph of a country's schooling factor influencing life 
+    def schooling(self):
+     """Display a graph of a country's schooling factor influencing life 
         expectancy.
         
-    Args:
-        user_input(string): The country that schooling will be analyzed and 
+        Args:
+         user_input(string): The country that schooling will be analyzed and 
             derived from
     
-    Returns:
-        A graph of the regression betweeen schooling and life expectency.
+        Returns:
+            A graph of the regression betweeen schooling and life expectency.
         
-    Side effects:
+        Side effects:
             outputs graph to stdout.
     """
 
-def income_comp():
-    """Display a graph of a country's Income composition of resources factor 
+    def income_comp(self):
+        """Display a graph of a country's Income composition of resources factor 
         influencing life expectancy.
 
-    Args:
-        user_input(string): The country that the income_comp will be derived 
+        Args:
+            user_input(string): The country that the income_comp will be derived 
             from
     
-    Returns:
-        A graph of the regression between income_comp and life expectency.
+        Returns:
+            A graph of the regression between income_comp and life expectency.
         
-    Side effects:
-            outputs graph to stdout.
-    """
+        Side effects:
+            Outputs graph to stdout.
+     """
 
-def alcohol():
-    """Display a graph of a country's alcohol consumption factor influencing 
-    life expectancy. Will analyze the affect of this factor on the independent 
-    variable
+    def alcohol(self):
+        """Display a graph of a country's alcohol consumption factor influencing 
+        life expectancy. Will analyze the affect of this factor on the 
+        independent variable
     
-    Args:
-        user_input(str): The name of the country that this is being analyzed on
+        Args:
+            user_input(str): The name of the country that this is being 
+            analyzed on
     
-    Returns:
-        A graph of the regression between alcohol and life expectency.
+        Returns:
+            A graph of the regression between alcohol and life expectency.
     
-    Side effects:
+        Side effects:
             outputs graph to stdout.
-    """ 
+        """ 
 
 def diphtheria():
     """Display a graph of a country's diphtheria factor influencing life 
