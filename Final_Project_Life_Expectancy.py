@@ -6,6 +6,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 #import statsmodels.api as st
 import sys
+import seaborn as sns
+
 
 #Create the class
 class dframe:
@@ -89,7 +91,8 @@ class dframe:
         
 
     def year(self):
-        """Display a graph of a country's year factor influencing life expectancy. 
+        """Display a graph of a country's year factor influencing life 
+        expectancy. 
         Years range from 2000 to 2015 for each country.  
     
         Args:
@@ -101,6 +104,9 @@ class dframe:
         Side effects:
             outputs graph to stdout.
         """
+        year_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(year_df, x_vars = ["Year"], y_vars = ["Life expectancy"], 
+                     kind = "reg")
 
     def polio(self):
         """Display a graph of a country's polio factor influencing 
@@ -117,11 +123,14 @@ class dframe:
         Side effects:
             outputs graph to stdout.
         """
+        polio_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(polio_df, x_vars = ["Polio"], y_vars = ["Life expectancy"],
+                     kind = "reg")
 
     def total_exp(self):
-        """Display a graph of a country's total expenditure factor influencing life 
-        expectancy.General government expenditure on health as a percentage of total 
-        government expenditure. 
+        """Display a graph of a country's total expenditure factor influencing 
+        life expectancy. General government expenditure on health as a 
+        percentage of total government expenditure. 
     
         Args:
             user_input(str): country name the user inputs.
@@ -133,7 +142,10 @@ class dframe:
         Side effects:
             outputs graph to stdout.
         """
-
+        total_exp_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(total_exp_df, x_vars = ["Total expenditure"], y_vars = 
+                     ["Life expectancy"], kind = "reg")
+    
     def schooling(self):
      """Display a graph of a country's schooling factor influencing life 
         expectancy.
@@ -194,7 +206,10 @@ class dframe:
         Side effects:
                 outputs graph to stdout.
         """ 
-
+        dip_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(year_df, x_vars=["diphtheria"],y_vars=["Life expectancy "], 
+                     kind='reg')
+    
     def adulty_mortality(self):
         """Display a graph of a country's adult mortality factor influencing life 
         expectancy. Adult mortality rates are presented as the probablility of dying
@@ -208,7 +223,10 @@ class dframe:
         Side effects:
                 outputs graph to stdout.
         """ 
-
+        am_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(year_df, x_vars=["adult_mortality"],y_vars=["Life expectancy "], 
+                     kind='reg')
+    
     def population(self):
         """Display a graph of a country's population factor influencing life 
         expectancy. Populations range within the million to tens of millions. 
@@ -222,7 +240,10 @@ class dframe:
         Side effects:
                 outputs graph to stdout.
         """
-
+        pop_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(year_df, x_vars=["Population"],y_vars=["Life expectancy "], 
+                     kind='reg')
+    
     def calc_coefficient(self):
         """Calculate the coefficient (linear regression) for the specified country. 
         This will use the statsmodels.api module to show linear regression model
@@ -238,7 +259,14 @@ class dframe:
         Side effects:
                 outputs table to stdout. 
         """
-
+        calc_df = self.df[self.df["Country"] == self.user_input] 
+        X=calc_df[["Year",'Polio','Total expenditure','Schooling',
+                   'Income composition of resources',
+                   'Alcohol', 'Diphtheria ', 'Adult Mortality', 'Population']]
+        y=calc_df["Life expectancy "]
+        model=st.OLS(y,X).fit()
+        predictions=model.predict(X)
+        model.summary()
  
 def main(filepath):
     """Main function: Will call the class dframe and 
@@ -248,6 +276,7 @@ def main(filepath):
     execute = dframe(filepath, user_input=0)
     execute.read_dframe()
     execute.check_input()
+    execute.calc_coefficient()
     
 if __name__ == "__main__":
     main(sys.argv[1])
