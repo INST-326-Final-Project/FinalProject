@@ -65,28 +65,26 @@ class dframe:
                 prints to stdout.   
         """
         
+        final_title = []
+        always_lower = ["in", "and", "of", "former", "the"]
+        
         if (self.user_input in self.df["Country"].values):
             print("yes")
     
         elif (self.user_input not in self.df["Country"].values):
             lower = self.user_input.lower()
             templist = lower.split(" ")
-            print(templist)
             
             for i in templist:
-                final_title = []
-                always_lower = ["in", "and", "of", "former", "the"]
-                
                 if i not in always_lower:
                     i = i.title()
                     final_title.append(i)
                 
-                elif i in always_lower:
+                if i in always_lower:
                     i.lower()
                     final_title.append(i)
-                final_title_output = " ".join(final_title)
-        
-                print(final_title_output)
+            final_title_output = " ".join(final_title)
+            print(final_title_output)
         
         
 
