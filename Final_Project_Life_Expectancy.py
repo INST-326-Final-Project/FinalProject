@@ -6,6 +6,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 #import statsmodels.api as st
 import sys
+import seaborn as sns
+
 
 #Create the class
 class dframe:
@@ -87,9 +89,8 @@ class dframe:
                 elif i in always_lower:
                     i.lower()
                     final_title.append(i)
-                final_title_output = " ".join(final_title)
-        
-                print(final_title_output)
+                    final_title_output = " ".join(final_title)
+        print(final_title_output)
         
         
 
@@ -107,7 +108,7 @@ class dframe:
         Side effects:
             outputs graph to stdout.
         """
-        year_df = df[df[self.user_input]]
+        year_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(year_df, x_vars = ["Year"], y_vars = ["Life expectancy"], kind = "reg")
 
     def polio(self):
@@ -125,6 +126,9 @@ class dframe:
         Side effects:
             outputs graph to stdout.
         """
+        polio_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(polio_df, x_vars = ["Polio"], y_vars = ["Life expectancy"],
+         kind = "reg")
 
     def total_exp(self):
         """Display a graph of a country's total expenditure factor influencing 
@@ -141,7 +145,10 @@ class dframe:
         Side effects:
             outputs graph to stdout.
         """
-
+        total_exp_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(total_exp_df, x_vars = ["Total expenditure"], y_vars = 
+        ["Life expectancy"], kind = "reg")
+    
     def schooling(self):
      """Display a graph of a country's schooling factor influencing life 
         expectancy.
