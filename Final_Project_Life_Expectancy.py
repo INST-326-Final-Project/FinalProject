@@ -67,11 +67,11 @@ class dframe:
             Side effects:
                 prints to stdout.   
         """
-        if (value in df["Country"].values):
+        if (self.user_input in df["Country"].values):
             print("yes")
     
-        elif (value not in df["Country"].values):
-            lower = value.lower()
+        elif (self.user_input not in df["Country"].values):
+            lower = self.user_input.lower()
             templist = lower.split(" ")
             print(templist)
             
