@@ -23,13 +23,14 @@ class dframe:
 
             Args:
                 user_input(str): country name the user inputs.
+                df (str): dataframe of the file
                 
             Returns:
                 user_input(str): name of the country
         """
         self.user_input = user_input
         self.user_input = input("What country would you like to look at? ")
-
+        self.df = pd.read_csv(filepath)
         
     
     def read_dframe(self, filepath):
@@ -51,7 +52,7 @@ class dframe:
         
         return output
     
-    def check_input(self, filepath):
+    def check_input(self):
         """Check the users input and capitalize the country names. Uses the user 
         input to see what specific country/row it is working with. Will have 
         possible user input names for countries and will correct them if the 
@@ -67,11 +68,11 @@ class dframe:
             Side effects:
                 prints to stdout.   
         """
-        df = pd.read_csv(filepath)
-        if (self.user_input in df["Country"].values):
+        
+        if (self.user_input in self.df["Country"].values):
             print("yes")
     
-        elif (self.user_input not in df["Country"].values):
+        elif (self.user_input not in self.df["Country"].values):
             lower = self.user_input.lower()
             templist = lower.split(" ")
             print(templist)
@@ -252,7 +253,7 @@ def main(filepath):
     """
     execute = dframe(user_input=0)
     execute.read_dframe(filepath)
-    execute.check_input(filepath)
+    execute.check_input()
     
 if __name__ == "__main__":
     main(sys.argv[1])
