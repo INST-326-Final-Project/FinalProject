@@ -51,7 +51,7 @@ class dframe:
         
         return output
     
-    def check_input(self, user_input):
+    def check_input(self):
         """Check the users input and capitalize the country names. Uses the user 
         input to see what specific country/row it is working with. Will have 
         possible user input names for countries and will correct them if the 
@@ -70,51 +70,51 @@ class dframe:
 
 
 
-def year():
-    """Display a graph of a country's year factor influencing life expectancy. 
-    Years range from 2000 to 2015 for each country.  
+    def year(self):
+        """Display a graph of a country's year factor influencing life expectancy. 
+        Years range from 2000 to 2015 for each country.  
     
-    Args:
-        user_input(str): country name the user inputs.
+        Args:
+            user_input(str): country name the user inputs.
         
-    Returns:
-        A graph of the regression betweeen year and life expectency.
+        Returns:
+            A graph of the regression betweeen year and life expectency.
     
-     Side effects:
+        Side effects:
             outputs graph to stdout.
-    """
+        """
 
-def polio():
-    """Display a graph of a country's polio factor influencing 
-    life expectancy.
-    Polio (Pol3) immunization coverage among 1-year-old infants.
+    def polio(self):
+        """Display a graph of a country's polio factor influencing 
+        life expectancy.
+        Polio (Pol3) immunization coverage among 1-year-old infants.
     
-    Args:
-        user_input(str): country name the user inputs.
+        Args:
+            user_input(str): country name the user inputs.
     
-    Returns:
-        A graph of the regression betweeen polio immunization and life 
-        expectency.
+        Returns:
+            A graph of the regression betweeen polio immunization and life 
+            expectency.
         
-    Side effects:
+        Side effects:
             outputs graph to stdout.
-    """
+        """
 
-def total_exp():
-    """Display a graph of a country's total expenditure factor influencing life 
-    expectancy.General government expenditure on health as a percentage of total 
-    government expenditure. 
+    def total_exp(self):
+        """Display a graph of a country's total expenditure factor influencing life 
+        expectancy.General government expenditure on health as a percentage of total 
+        government expenditure. 
     
-    Args:
-        user_input(str): country name the user inputs.
+        Args:
+            user_input(str): country name the user inputs.
     
-    Returns:
-        A graph of the regression betweeen governmnet expenditure and life 
-        expectency.
+        Returns:
+            A graph of the regression betweeen governmnet expenditure and life 
+            expectency.
         
-    Side effects:
+        Side effects:
             outputs graph to stdout.
-    """
+        """
 
 def schooling():
     """Display a graph of a country's schooling factor influencing life 
