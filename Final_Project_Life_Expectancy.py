@@ -70,7 +70,12 @@ class dframe:
         lower_case = self.user_input.lower()
         proper_case = self.user_input.title()
         print(proper_case)
-
+        #if (proper_case in df[df["Country"]]):
+        #    continue
+        #elif (proper_case not in df[df["Country"]]):
+        #    print("This country is not valid, try again")
+            
+        
 
     def year(self):
         """Display a graph of a country's year factor influencing life expectancy. 
