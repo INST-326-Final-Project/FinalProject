@@ -231,6 +231,7 @@ def main(filepath):
     """
     execute = dframe(user_input=0)
     execute.read_dframe(filepath)
+    execute.check_input()
     
 if __name__ == "__main__":
     main(sys.argv[1])
