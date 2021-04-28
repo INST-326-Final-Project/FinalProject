@@ -69,7 +69,7 @@ class dframe:
         """
         lower_case = self.user_input.lower()
         proper_case = self.user_input.title()
-        print(self.user_input)
+        print(proper_case)
 
 
     def year(self):
