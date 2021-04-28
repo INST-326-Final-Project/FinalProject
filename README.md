@@ -64,3 +64,7 @@
 
 ## (4/28/21) - Leek
 * Added functiosn to class methods.
+
+## (4/28/21) - Joon
+* Added functions to class methods.
+* Fixed annotated bibiography.
