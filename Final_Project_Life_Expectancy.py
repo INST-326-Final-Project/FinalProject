@@ -67,7 +67,9 @@ class dframe:
             Side effects:
                 prints to stdout.   
         """
-
+        lower_case = self.user_input.lower()
+        proper_case = self.user_input.title()
+        print(self.user_input)
 
 
     def year(self):
@@ -119,109 +121,110 @@ class dframe:
             outputs graph to stdout.
         """
 
-def schooling():
-    """Display a graph of a country's schooling factor influencing life 
+    def schooling(self):
+     """Display a graph of a country's schooling factor influencing life 
         expectancy.
         
-    Args:
-        user_input(string): The country that schooling will be analyzed and 
+        Args:
+         user_input(string): The country that schooling will be analyzed and 
             derived from
     
-    Returns:
-        A graph of the regression betweeen schooling and life expectency.
+        Returns:
+            A graph of the regression betweeen schooling and life expectency.
         
-    Side effects:
+        Side effects:
             outputs graph to stdout.
     """
 
-def income_comp():
-    """Display a graph of a country's Income composition of resources factor 
+    def income_comp(self):
+        """Display a graph of a country's Income composition of resources factor 
         influencing life expectancy.
 
-    Args:
-        user_input(string): The country that the income_comp will be derived 
+        Args:
+            user_input(string): The country that the income_comp will be derived 
             from
     
-    Returns:
-        A graph of the regression between income_comp and life expectency.
+        Returns:
+            A graph of the regression between income_comp and life expectency.
         
-    Side effects:
-            outputs graph to stdout.
-    """
+        Side effects:
+            Outputs graph to stdout.
+     """
 
-def alcohol():
-    """Display a graph of a country's alcohol consumption factor influencing 
-    life expectancy. Will analyze the affect of this factor on the independent 
-    variable
+    def alcohol(self):
+        """Display a graph of a country's alcohol consumption factor influencing 
+        life expectancy. Will analyze the affect of this factor on the 
+        independent variable
     
-    Args:
-        user_input(str): The name of the country that this is being analyzed on
+        Args:
+            user_input(str): The name of the country that this is being 
+            analyzed on
     
-    Returns:
-        A graph of the regression between alcohol and life expectency.
+        Returns:
+            A graph of the regression between alcohol and life expectency.
     
-    Side effects:
+        Side effects:
             outputs graph to stdout.
-    """ 
+        """ 
 
-def diphtheria():
-    """Display a graph of a country's diphtheria factor influencing life 
-    expectancy. Shows the factor of Diptheria tatnus toxoid & pertussis (DTP3) 
-    immunization amongst young children (1-year olds).
+    def diphtheria(self):
+        """Display a graph of a country's diphtheria factor influencing life 
+        expectancy. Shows the factor of Diptheria tatnus toxoid & pertussis (DTP3) 
+        immunization amongst young children (1-year olds).
+            
+        Args:
+            user_input(str): country name the user inputs.
         
-    Args:
-        user_input(str): country name the user inputs.
-    
-    Returns:
-        A graph of the regression between diphtheria and life expectency.
-        
-    Side effects:
-            outputs graph to stdout.
-    """ 
+        Returns:
+            A graph of the regression between diphtheria and life expectency.
+            
+        Side effects:
+                outputs graph to stdout.
+        """ 
 
-def adulty_mortality():
-    """Display a graph of a country's adult mortality factor influencing life 
-    expectancy. Adult mortality rates are presented as the probablility of dying
-    between the ages of 15 to 60 per 1000 population. 
-    
-    Args:
-        user_input(str): country name the user inputs.
-    Returns:
-        A graph of the regression between adult_mortality and life expectency.
+    def adulty_mortality(self):
+        """Display a graph of a country's adult mortality factor influencing life 
+        expectancy. Adult mortality rates are presented as the probablility of dying
+        between the ages of 15 to 60 per 1000 population. 
         
-    Side effects:
-            outputs graph to stdout.
-    """ 
+        Args:
+            user_input(str): country name the user inputs.
+        Returns:
+            A graph of the regression between adult_mortality and life expectency.
+            
+        Side effects:
+                outputs graph to stdout.
+        """ 
 
-def population():
-    """Display a graph of a country's population factor influencing life 
-    expectancy. Populations range within the million to tens of millions. 
-    
-    Args:
-        user_input(str): country name the user inputs.
-    
-    Returns:
-        A graph of the regression between population and life expectency.
+    def population(self):
+        """Display a graph of a country's population factor influencing life 
+        expectancy. Populations range within the million to tens of millions. 
         
-    Side effects:
-            outputs graph to stdout.
-    """
+        Args:
+            user_input(str): country name the user inputs.
+        
+        Returns:
+            A graph of the regression between population and life expectency.
+            
+        Side effects:
+                outputs graph to stdout.
+        """
 
-def calc_coefficient():
-    """Calculate the coefficient (linear regression) for the specified country. 
-    This will use the statsmodels.api module to show linear regression model
-    for each factor in the csv file. Results will include respective p-values 
-    (values thata re less than 0.05 are considered statistically significant).
-    
-    Args:
-        user_input(str): country name the user inputs.
-    
-    Returns:
-        a linear regression statistical model of each factor.
+    def calc_coefficient(self):
+        """Calculate the coefficient (linear regression) for the specified country. 
+        This will use the statsmodels.api module to show linear regression model
+        for each factor in the csv file. Results will include respective p-values 
+        (values thata re less than 0.05 are considered statistically significant).
         
-    Side effects:
-            outputs table to stdout. 
-    """
+        Args:
+            user_input(str): country name the user inputs.
+        
+        Returns:
+            a linear regression statistical model of each factor.
+            
+        Side effects:
+                outputs table to stdout. 
+        """
 
  
 def main(filepath):
@@ -231,6 +234,7 @@ def main(filepath):
     """
     execute = dframe(user_input=0)
     execute.read_dframe(filepath)
+    execute.check_input()
     
 if __name__ == "__main__":
     main(sys.argv[1])
