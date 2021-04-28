@@ -61,3 +61,6 @@
 ## (4/28/21)- Owen
 * Worked on making methods of functions
 * Adjusted method docstrings
+
+## (4/28/21) - Leek
+* Added functiosn to class methods.
