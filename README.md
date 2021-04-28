@@ -61,6 +61,15 @@
 ## (4/28/21)- Owen
 * Worked on making methods of functions
 * Adjusted method docstrings
+* Helped fixed def year(self) method (specifically helped with self.df[self.df["Country"] == self.user_input] syntax. 
 
 ## (4/28/21) - Leek
 * Added functiosn to class methods.
+* Worked on diphtheria, adult_mortality, population, & calc_coefficient methods. 
+* Added calc_coefficient() instance call. 
+
+## (4/28/21)- Josh
+* Worked on check_input method
+
+## (4/28/21) - Joon
+* Worked on year, polio, & total_exp methods. 
