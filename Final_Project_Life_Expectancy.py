@@ -67,10 +67,29 @@ class dframe:
             Side effects:
                 prints to stdout.   
         """
-        lower_case = self.user_input.lower()
-        proper_case = self.user_input.title()
-        print(proper_case)
+        if (value in df["Country"].values):
+            print("yes")
+    
+        elif (value not in df["Country"].values):
+            lower = value.lower()
+            templist = lower.split(" ")
+            print(templist)
             
+            for i in templist:
+                final_title = []
+                always_lower = ["in", "and", "of", "former", "the"]
+                
+                if i not in always_lower:
+                    i = i.title()
+                    final_title.append(i)
+                
+                elif i in always_lower:
+                    i.lower()
+                    final_title.append(i)
+                final_title_output = " ".join(final_title)
+        
+                print(final_title_output)
+        
         
 
     def year(self):
