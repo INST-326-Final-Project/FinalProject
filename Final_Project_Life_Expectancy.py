@@ -67,7 +67,9 @@ class dframe:
             Side effects:
                 prints to stdout.   
         """
-
+        lower_case = self.user_input.lower()
+        proper_case = self.user_input.title()
+        print(self.user_input)
 
 
     def year(self):
@@ -229,6 +231,7 @@ def main(filepath):
     """
     execute = dframe(user_input=0)
     execute.read_dframe(filepath)
+    execute.check_input()
     
 if __name__ == "__main__":
     main(sys.argv[1])
