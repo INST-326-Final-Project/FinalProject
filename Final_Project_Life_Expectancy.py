@@ -162,64 +162,64 @@ class dframe:
             outputs graph to stdout.
         """ 
 
-def diphtheria():
-    """Display a graph of a country's diphtheria factor influencing life 
-    expectancy. Shows the factor of Diptheria tatnus toxoid & pertussis (DTP3) 
-    immunization amongst young children (1-year olds).
+    def diphtheria(self):
+        """Display a graph of a country's diphtheria factor influencing life 
+        expectancy. Shows the factor of Diptheria tatnus toxoid & pertussis (DTP3) 
+        immunization amongst young children (1-year olds).
+            
+        Args:
+            user_input(str): country name the user inputs.
         
-    Args:
-        user_input(str): country name the user inputs.
-    
-    Returns:
-        A graph of the regression between diphtheria and life expectency.
-        
-    Side effects:
-            outputs graph to stdout.
-    """ 
+        Returns:
+            A graph of the regression between diphtheria and life expectency.
+            
+        Side effects:
+                outputs graph to stdout.
+        """ 
 
-def adulty_mortality():
-    """Display a graph of a country's adult mortality factor influencing life 
-    expectancy. Adult mortality rates are presented as the probablility of dying
-    between the ages of 15 to 60 per 1000 population. 
-    
-    Args:
-        user_input(str): country name the user inputs.
-    Returns:
-        A graph of the regression between adult_mortality and life expectency.
+    def adulty_mortality(self):
+        """Display a graph of a country's adult mortality factor influencing life 
+        expectancy. Adult mortality rates are presented as the probablility of dying
+        between the ages of 15 to 60 per 1000 population. 
         
-    Side effects:
-            outputs graph to stdout.
-    """ 
+        Args:
+            user_input(str): country name the user inputs.
+        Returns:
+            A graph of the regression between adult_mortality and life expectency.
+            
+        Side effects:
+                outputs graph to stdout.
+        """ 
 
-def population():
-    """Display a graph of a country's population factor influencing life 
-    expectancy. Populations range within the million to tens of millions. 
-    
-    Args:
-        user_input(str): country name the user inputs.
-    
-    Returns:
-        A graph of the regression between population and life expectency.
+    def population(self):
+        """Display a graph of a country's population factor influencing life 
+        expectancy. Populations range within the million to tens of millions. 
         
-    Side effects:
-            outputs graph to stdout.
-    """
+        Args:
+            user_input(str): country name the user inputs.
+        
+        Returns:
+            A graph of the regression between population and life expectency.
+            
+        Side effects:
+                outputs graph to stdout.
+        """
 
-def calc_coefficient():
-    """Calculate the coefficient (linear regression) for the specified country. 
-    This will use the statsmodels.api module to show linear regression model
-    for each factor in the csv file. Results will include respective p-values 
-    (values thata re less than 0.05 are considered statistically significant).
-    
-    Args:
-        user_input(str): country name the user inputs.
-    
-    Returns:
-        a linear regression statistical model of each factor.
+    def calc_coefficient(self):
+        """Calculate the coefficient (linear regression) for the specified country. 
+        This will use the statsmodels.api module to show linear regression model
+        for each factor in the csv file. Results will include respective p-values 
+        (values thata re less than 0.05 are considered statistically significant).
         
-    Side effects:
-            outputs table to stdout. 
-    """
+        Args:
+            user_input(str): country name the user inputs.
+        
+        Returns:
+            a linear regression statistical model of each factor.
+            
+        Side effects:
+                outputs table to stdout. 
+        """
 
  
 def main(filepath):
