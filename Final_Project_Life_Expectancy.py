@@ -71,7 +71,8 @@ class dframe:
 
 
     def year(self):
-        """Display a graph of a country's year factor influencing life expectancy. 
+        """Display a graph of a country's year factor influencing life 
+        expectancy. 
         Years range from 2000 to 2015 for each country.  
     
         Args:
@@ -83,6 +84,8 @@ class dframe:
         Side effects:
             outputs graph to stdout.
         """
+        year_df = df[df[self.user_input]]
+        sns.pairplot(year_df, x_vars = ["Year"], y_vars = ["Life expectancy"], kind = "reg")
 
     def polio(self):
         """Display a graph of a country's polio factor influencing 
@@ -101,9 +104,9 @@ class dframe:
         """
 
     def total_exp(self):
-        """Display a graph of a country's total expenditure factor influencing life 
-        expectancy.General government expenditure on health as a percentage of total 
-        government expenditure. 
+        """Display a graph of a country's total expenditure factor influencing 
+        life expectancy. General government expenditure on health as a 
+        percentage of total government expenditure. 
     
         Args:
             user_input(str): country name the user inputs.
