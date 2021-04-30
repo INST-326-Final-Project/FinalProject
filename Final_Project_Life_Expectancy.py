@@ -216,7 +216,7 @@ class dframe:
                 outputs graph to stdout.
         """ 
         dip_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(dip_df, x_vars=["diphtheria"],y_vars=["Life expectancy "], 
+        sns.pairplot(dip_df, x_vars=["Diphtheria "],y_vars=["Life expectancy "], 
                      kind='reg')
     
     def adulty_mortality(self):
@@ -234,7 +234,7 @@ class dframe:
                 outputs graph to stdout.
         """ 
         am_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(am_df, x_vars=["adult_mortality"],
+        sns.pairplot(am_df, x_vars=["Adult Mortality"],
                      y_vars=["Life expectancy "], kind='reg')
     
     def population(self):
