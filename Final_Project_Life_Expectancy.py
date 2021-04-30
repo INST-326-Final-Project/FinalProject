@@ -160,6 +160,9 @@ class dframe:
         Side effects:
             outputs graph to stdout.
     """
+        schooling_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(total_exp_df, x_vars = ["Schooling"], y_vars = 
+                     ["Life expectancy"], kind = "reg")
 
     def income_comp(self):
         """Display a graph of a country's Income composition of resources factor 
@@ -175,7 +178,10 @@ class dframe:
         Side effects:
             Outputs graph to stdout.
      """
-
+        income_comp_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(total_exp_df, x_vars = ["Income composition of resources"], 
+                     y_vars = ["Life expectancy"], kind = "reg")
+        
     def alcohol(self):
         """Display a graph of a country's alcohol consumption factor influencing 
         life expectancy. Will analyze the affect of this factor on the 
@@ -191,7 +197,10 @@ class dframe:
         Side effects:
             outputs graph to stdout.
         """ 
-
+        alcohol_df = self.df[self.df["Country"] == self.user_input]
+        sns.pairplot(total_exp_df, x_vars = ["Alcohol"], y_vars = 
+                     ["Life expectancy"], kind = "reg")
+        
     def diphtheria(self):
         """Display a graph of a country's diphtheria factor influencing life 
         expectancy. Shows the factor of Diptheria tatnus toxoid & pertussis (DTP3) 
