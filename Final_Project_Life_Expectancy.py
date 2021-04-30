@@ -4,7 +4,7 @@ Script takes the users input and outputs information & data on a country.
 #Import necessary modules.
 import pandas as pd
 import matplotlib.pyplot as plt
-#import statsmodels.api as st
+import statsmodels.api as st
 import sys
 import seaborn as sns
 
