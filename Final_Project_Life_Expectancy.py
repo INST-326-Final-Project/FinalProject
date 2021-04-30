@@ -144,7 +144,7 @@ class dframe:
         """
         total_exp_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(total_exp_df, x_vars = ["Total expenditure"], y_vars = 
-                     ["Life expectancy"], kind = "reg")
+                     ["Life expectancy "], kind = "reg")
     
     def schooling(self):
         """Display a graph of a country's schooling factor influencing life 
