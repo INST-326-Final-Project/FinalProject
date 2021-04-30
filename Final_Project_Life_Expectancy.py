@@ -277,7 +277,7 @@ class dframe:
         y=calc_df["Life expectancy "]
         model=st.OLS(y,X).fit()
         predictions=model.predict(X)
-        model.summary()
+        print(model.summary())
  
 def main(filepath):
     """Main function: Will call the class dframe and 
