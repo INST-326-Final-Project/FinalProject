@@ -107,6 +107,7 @@ class dframe:
         year_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(year_df, x_vars = ["Year"], y_vars = ["Life expectancy "], 
                      kind = "reg")
+        plt.show()
 
     def polio(self):
         """Display a graph of a country's polio factor influencing 
@@ -126,6 +127,7 @@ class dframe:
         polio_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(polio_df, x_vars = ["Polio"], y_vars = ["Life expectancy "],
                      kind = "reg")
+        plt.show()
 
     def total_exp(self):
         """Display a graph of a country's total expenditure factor influencing 
@@ -145,6 +147,7 @@ class dframe:
         total_exp_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(total_exp_df, x_vars = ["Total expenditure"], y_vars = 
                      ["Life expectancy "], kind = "reg")
+        plt.show()
     
     def schooling(self):
         """Display a graph of a country's schooling factor influencing life 
@@ -163,6 +166,7 @@ class dframe:
         schooling_df = self.df[self.df["Country"] == self.user_input] 
         sns.pairplot(schooling_df, x_vars = ["Schooling"], 
                      y_vars = ["Life expectancy "], kind = "reg")
+        plt.show()
 
     def income_comp(self):
         """Display a graph of a country's Income composition of resources factor 
@@ -181,6 +185,7 @@ class dframe:
         income_comp_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(income_comp_df, x_vars = ["Income composition of resources"], 
                      y_vars = ["Life expectancy "], kind = "reg")
+        plt.show()
         
     def alcohol(self):
         """Display a graph of a country's alcohol consumption factor influencing 
@@ -200,6 +205,7 @@ class dframe:
         alcohol_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(alcohol_df, x_vars = ["Alcohol"], y_vars = 
                      ["Life expectancy "], kind = "reg")
+        plt.show()
         
     def diphtheria(self):
         """Display a graph of a country's diphtheria factor influencing life 
@@ -218,7 +224,8 @@ class dframe:
         dip_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(dip_df, x_vars=["Diphtheria "],y_vars=["Life expectancy "], 
                      kind='reg')
-    
+        plt.show()
+
     def adult_mortality(self):
         """Display a graph of a country's adult mortality factor influencing 
         life expectancy. Adult mortality rates are presented as the probablility 
@@ -236,6 +243,7 @@ class dframe:
         am_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(am_df, x_vars=["Adult Mortality"],
                      y_vars=["Life expectancy "], kind='reg')
+        plt.show()
     
     def population(self):
         """Display a graph of a country's population factor influencing life 
@@ -253,7 +261,8 @@ class dframe:
         pop_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(pop_df, x_vars=["Population"],y_vars=["Life expectancy "], 
                      kind='reg')
-    
+        plt.show()
+        
     def calc_coefficient(self):
         """Calculate the coefficient (linear regression) for the specified 
         country. This will use the statsmodels.api module to show linear 
