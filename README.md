@@ -71,4 +71,5 @@
 
 ## (4/30/21) - Owen
 * Added functions to my class methods
-* Fixed indentation on my sections
+* Fixed line lengths on my sections
+* Fixed some indentations on other sections (to meet 80 character limit)
