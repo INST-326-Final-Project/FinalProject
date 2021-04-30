@@ -73,3 +73,6 @@
 * Added functions to my class methods
 * Fixed line lengths on my sections
 * Fixed some indentations on other sections (to meet 80 character limit)
+
+## (4/30/21) - Joon
+* Debugged method graphs not showing, added plt.show() to each factor method
