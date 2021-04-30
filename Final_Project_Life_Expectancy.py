@@ -203,8 +203,8 @@ class dframe:
         
     def diphtheria(self):
         """Display a graph of a country's diphtheria factor influencing life 
-        expectancy. Shows the factor of Diptheria tatnus toxoid & pertussis (DTP3) 
-        immunization amongst young children (1-year olds).
+        expectancy. Shows the factor of Diptheria tatnus toxoid & pertussis 
+        (DTP3) immunization amongst young children (1-year olds).
             
         Args:
             user_input(str): country name the user inputs.
@@ -220,21 +220,22 @@ class dframe:
                      kind='reg')
     
     def adulty_mortality(self):
-        """Display a graph of a country's adult mortality factor influencing life 
-        expectancy. Adult mortality rates are presented as the probablility of dying
-        between the ages of 15 to 60 per 1000 population. 
+        """Display a graph of a country's adult mortality factor influencing 
+        life expectancy. Adult mortality rates are presented as the probablility 
+        of dying between the ages of 15 to 60 per 1000 population. 
         
         Args:
             user_input(str): country name the user inputs.
         Returns:
-            A graph of the regression between adult_mortality and life expectency.
+            A graph of the regression between adult_mortality and life 
+            expectency.
             
         Side effects:
                 outputs graph to stdout.
         """ 
         am_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(year_df, x_vars=["adult_mortality"],y_vars=["Life expectancy "], 
-                     kind='reg')
+        sns.pairplot(year_df, x_vars=["adult_mortality"],
+                     y_vars=["Life expectancy "], kind='reg')
     
     def population(self):
         """Display a graph of a country's population factor influencing life 
@@ -254,10 +255,11 @@ class dframe:
                      kind='reg')
     
     def calc_coefficient(self):
-        """Calculate the coefficient (linear regression) for the specified country. 
-        This will use the statsmodels.api module to show linear regression model
-        for each factor in the csv file. Results will include respective p-values 
-        (values thata re less than 0.05 are considered statistically significant).
+        """Calculate the coefficient (linear regression) for the specified 
+        country. This will use the statsmodels.api module to show linear 
+        regression model for each factor in the csv file. Results will include 
+        respective p-values (values thata re less than 0.05 are considered 
+        statistically significant).
         
         Args:
             user_input(str): country name the user inputs.
