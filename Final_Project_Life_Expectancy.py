@@ -105,7 +105,7 @@ class dframe:
             outputs graph to stdout.
         """
         year_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(year_df, x_vars = ["Year"], y_vars = ["Life expectancy"], 
+        sns.pairplot(year_df, x_vars = ["Year"], y_vars = ["Life expectancy "], 
                      kind = "reg")
 
     def polio(self):
@@ -124,7 +124,7 @@ class dframe:
             outputs graph to stdout.
         """
         polio_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(polio_df, x_vars = ["Polio"], y_vars = ["Life expectancy"],
+        sns.pairplot(polio_df, x_vars = ["Polio"], y_vars = ["Life expectancy "],
                      kind = "reg")
 
     def total_exp(self):
@@ -143,7 +143,7 @@ class dframe:
             outputs graph to stdout.
         """
         total_exp_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(total_exp_df, x_vars = ["Total expenditure"], y_vars = 
+        sns.pairplot(total_exp_df, x_vars = ["Total expenditure "], y_vars = 
                      ["Life expectancy"], kind = "reg")
     
     def schooling(self):
@@ -162,7 +162,7 @@ class dframe:
         """
         schooling_df = self.df[self.df["Country"] == self.user_input] 
         sns.pairplot(schooling_df, x_vars = ["Schooling"], 
-                     y_vars = ["Life expectancy"], kind = "reg")
+                     y_vars = ["Life expectancy "], kind = "reg")
 
     def income_comp(self):
         """Display a graph of a country's Income composition of resources factor 
@@ -180,7 +180,7 @@ class dframe:
      """
         income_comp_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(income_comp_df, x_vars = ["Income composition of resources"], 
-                     y_vars = ["Life expectancy"], kind = "reg")
+                     y_vars = ["Life expectancy "], kind = "reg")
         
     def alcohol(self):
         """Display a graph of a country's alcohol consumption factor influencing 
@@ -199,7 +199,7 @@ class dframe:
         """ 
         alcohol_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(alcohol_df, x_vars = ["Alcohol"], y_vars = 
-                     ["Life expectancy"], kind = "reg")
+                     ["Life expectancy "], kind = "reg")
         
     def diphtheria(self):
         """Display a graph of a country's diphtheria factor influencing life 
