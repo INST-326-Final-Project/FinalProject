@@ -294,7 +294,7 @@ def main(filepath):
     execute.income_comp()
     execute.alcohol()
     execute.diphtheria()
-    execute.adulty_morality()
+    execute.adult_morality()
     execute.population()
     execute.calc_coefficient()
     
