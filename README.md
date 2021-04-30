@@ -68,3 +68,7 @@
 ## (4/28/21) - Joon
 * Added functions to class methods.
 * Fixed annotated bibiography.
+
+## (4/30/21) - Owen
+* Added functions to my class methods
+* Fixed indentation on my sections
