@@ -287,6 +287,15 @@ def main(filepath):
     execute = dframe(filepath, user_input=0)
     execute.read_dframe()
     execute.check_input()
+    execute.year()
+    execute.polio()
+    execute.total_exp()
+    execute.schooling()
+    execute.income_comp()
+    execute.alcohol()
+    execute.diphtheria()
+    execute.adulty_morality()
+    execute.population()
     execute.calc_coefficient()
     
 if __name__ == "__main__":
