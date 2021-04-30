@@ -160,9 +160,9 @@ class dframe:
         Side effects:
             outputs graph to stdout.
         """
-        schooling_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(total_exp_df, x_vars = ["Schooling"], y_vars = 
-                     ["Life expectancy"], kind = "reg")
+        schooling_df = self.df[self.df["Country"] == self.user_input] 
+        sns.pairplot(schooling_df, x_vars = ["Schooling"], 
+                     y_vars = ["Life expectancy"], kind = "reg")
 
     def income_comp(self):
         """Display a graph of a country's Income composition of resources factor 
@@ -179,7 +179,7 @@ class dframe:
             Outputs graph to stdout.
      """
         income_comp_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(total_exp_df, x_vars = ["Income composition of resources"], 
+        sns.pairplot(income_comp_df, x_vars = ["Income composition of resources"], 
                      y_vars = ["Life expectancy"], kind = "reg")
         
     def alcohol(self):
@@ -198,7 +198,7 @@ class dframe:
             outputs graph to stdout.
         """ 
         alcohol_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(total_exp_df, x_vars = ["Alcohol"], y_vars = 
+        sns.pairplot(alcohol_df, x_vars = ["Alcohol"], y_vars = 
                      ["Life expectancy"], kind = "reg")
         
     def diphtheria(self):
@@ -216,7 +216,7 @@ class dframe:
                 outputs graph to stdout.
         """ 
         dip_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(year_df, x_vars=["diphtheria"],y_vars=["Life expectancy "], 
+        sns.pairplot(dip_df, x_vars=["diphtheria"],y_vars=["Life expectancy "], 
                      kind='reg')
     
     def adulty_mortality(self):
@@ -234,7 +234,7 @@ class dframe:
                 outputs graph to stdout.
         """ 
         am_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(year_df, x_vars=["adult_mortality"],
+        sns.pairplot(am_df, x_vars=["adult_mortality"],
                      y_vars=["Life expectancy "], kind='reg')
     
     def population(self):
@@ -251,7 +251,7 @@ class dframe:
                 outputs graph to stdout.
         """
         pop_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(year_df, x_vars=["Population"],y_vars=["Life expectancy "], 
+        sns.pairplot(pop_df, x_vars=["Population"],y_vars=["Life expectancy "], 
                      kind='reg')
     
     def calc_coefficient(self):
