@@ -219,7 +219,7 @@ class dframe:
         sns.pairplot(dip_df, x_vars=["Diphtheria "],y_vars=["Life expectancy "], 
                      kind='reg')
     
-    def adulty_mortality(self):
+    def adult_mortality(self):
         """Display a graph of a country's adult mortality factor influencing 
         life expectancy. Adult mortality rates are presented as the probablility 
         of dying between the ages of 15 to 60 per 1000 population. 
