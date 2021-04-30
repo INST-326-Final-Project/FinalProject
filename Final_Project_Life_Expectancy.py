@@ -107,7 +107,7 @@ class dframe:
         year_df = self.df[self.df["Country"] == self.user_input]
         sns.pairplot(year_df, x_vars = ["Year"], y_vars = ["Life expectancy "], 
                      kind = "reg")
-        plt.show()
+        plt.show()  
 
     def polio(self):
         """Display a graph of a country's polio factor influencing 
