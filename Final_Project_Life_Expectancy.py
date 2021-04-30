@@ -147,7 +147,7 @@ class dframe:
                      ["Life expectancy"], kind = "reg")
     
     def schooling(self):
-         """Display a graph of a country's schooling factor influencing life 
+        """Display a graph of a country's schooling factor influencing life 
          expectancy.
         
         Args:
