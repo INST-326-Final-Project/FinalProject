@@ -9,6 +9,7 @@
 ## Setup 
 * In order to run this file, please have the latest version of Python 3 downloaded.
 * For the life_expectancy_cleaning.py file, please be sure to specify the filepath in where you would like to export the csv file after the dataframe changes.  
+* To run the Final_Project_Life_Expectancy.py file, please open the python terminal and use the following: python Final_Project_Life_Expectancy.py NewLifeExpectancy.csv 
 
 ## File Purposes
 * Life Expectancy.csv: Original Life Expectancy csv file without any changes made from Kaggle.com. 
