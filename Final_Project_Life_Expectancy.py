@@ -143,7 +143,7 @@ class dframe:
             outputs graph to stdout.
         """
         total_exp_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(total_exp_df, x_vars = ["Total expenditure "], y_vars = 
+        sns.pairplot(total_exp_df, x_vars = ["Total expenditure"], y_vars = 
                      ["Life expectancy"], kind = "reg")
     
     def schooling(self):
