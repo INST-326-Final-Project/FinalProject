@@ -76,3 +76,6 @@
 
 ## (4/30/21) - Joon
 * Debugged method graphs not showing, added plt.show() to each factor method
+
+## (4/30/21) - Leek
+* Deleted cleaned_life_expectancy csv file, and created/added NewLifeExpectancy.csv file without null values. 
