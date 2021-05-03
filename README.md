@@ -80,3 +80,7 @@
 
 ## (4/30/21) - Leek
 * Deleted cleaned_life_expectancy csv file, and created/added NewLifeExpectancy.csv file without null values. 
+
+## (4/30/21) - Josh
+* Worked more on the check_input method and got the name recognition of odd country names to pass
+* Fixed other parts of the read_csv to make sure it can pass through all methods
