@@ -70,10 +70,7 @@ class dframe:
         final_title = []
         always_lower = ["in", "and", "of", "former", "the"]
         
-        if (self.user_input in self.df["Country"].values):
-            print("yes")
-    
-        elif (self.user_input not in self.df["Country"].values):
+        if (self.user_input not in self.df["Country"].values):
             lower = self.user_input.lower()
             templist = lower.split(" ")
             
