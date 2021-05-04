@@ -70,10 +70,12 @@ class dframe:
         final_title = []
         always_lower = ["in", "and", "of", "former", "the"]
         
+        # if the input is not in the country column
         if (self.user_input not in self.df["Country"].values):
             lower = self.user_input.lower()
             templist = lower.split(" ")
             
+            # account for special words that are lowercase
             for i in templist:
                 if i not in always_lower:
                     i = i.title()
