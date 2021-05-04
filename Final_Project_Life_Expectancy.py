@@ -84,8 +84,6 @@ class dframe:
                     final_title.append(i)
             final_title_output = " ".join(final_title)
             self.user_input = final_title_output
-            print(final_title_output)
-            print(self.user_input)
 
         
 
