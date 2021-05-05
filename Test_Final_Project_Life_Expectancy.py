@@ -2,45 +2,45 @@ import Final_Project_Life_Expectancy as proj
 import pytest
 
 #Create the class
-class dframe:
+class test_dframe:
     
-    def __init__():
+    def test___init__():
         
     
-    def read_dframe():
+    def test_read_dframe():
     
     
-    def check_input():
+    def test_check_input():
 
         
-    def year():
+    def test_year():
 
 
-    def polio():
+    def test_polio():
         
  
-    def total_exp():
+    def test_total_exp():
 
     
-    def schooling():
+    def test_schooling():
 
 
-    def income_comp():
+    def test_income_comp():
 
  
-    def alcohol():
+    def test_alcohol():
 
         
-    def diphtheria():
+    def test_diphtheria():
 
 
-    def adult_mortality():
+    def test_adult_mortality():
 
 
-    def population():
+    def test_population():
 
 
-    def calc_coefficient():
+    def test_calc_coefficient():
 
 @pytest.fixture
 def afghan_test():
