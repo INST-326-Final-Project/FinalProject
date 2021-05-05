@@ -182,8 +182,9 @@ class dframe:
             Outputs graph to stdout.
      """
         income_comp_df = self.df[self.df["Country"] == self.user_input]
-        sns.pairplot(income_comp_df, x_vars = ["Income composition of resources"], 
-                     y_vars = ["Life expectancy "], kind = "reg")
+        sns.pairplot(income_comp_df, x_vars = 
+                     ["Income composition of resources"], y_vars = 
+                     ["Life expectancy "], kind = "reg")
         plt.show()
         
     def alcohol(self):

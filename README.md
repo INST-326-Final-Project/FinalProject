@@ -87,3 +87,6 @@
 
 ## (5/4/21) - Josh
 * Continue to work on the check_input method
+
+## (5/4/21) - Owen
+* Reformatted indentations for income_comp
