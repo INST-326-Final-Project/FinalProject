@@ -42,6 +42,9 @@ class dframe:
 
     def calc_coefficient():
 
+@pytest.fixture
+def afghan_test():
+    return Final_Project_Life_Expectancy.year("Afghanistan")
         
 
  
