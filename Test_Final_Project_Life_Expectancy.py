@@ -46,23 +46,3 @@ class dframe:
 def afghan_test():
     return Final_Project_Life_Expectancy.year("Afghanistan")
         
-
- 
-#call the class
-def main(filepath):     
-    execute = dframe(filepath, user_input=0)
-    execute.read_dframe()
-    execute.check_input()
-    execute.year()
-    execute.polio()
-    execute.income_comp()
-    execute.schooling()
-    execute.total_exp()
-    execute.alcohol()
-    execute.diphtheria()
-    execute.adult_mortality()
-    execute.population()
-    execute.calc_coefficient()
-
-if __name__ == "__main__":
-    main(sys.argv[1])
