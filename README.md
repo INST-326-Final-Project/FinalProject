@@ -93,3 +93,6 @@
 
 ## (5/5/21) - Josh
 * Started working on the test scripts for our methods
+
+## (5/5/21)- Leek
+* Created & uploaded "Final Project Countries" word document (details what countries a user can input). 
