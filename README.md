@@ -97,3 +97,7 @@
 ## (5/5/21)- Leek
 * Created & uploaded "Final Project Countries" word document (details what countries a user can input). 
 * Created Final Project Presentation Power Point & uploaded to team repository. 
+
+## (5/6/21) - Owen
+* Attempted to fix pytest fixture
+* Overall attempted to continue work on test scripting
