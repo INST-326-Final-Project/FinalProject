@@ -135,7 +135,7 @@ def main(filepath):
     functions outside of the class. 
     
     """
-    graph_list = ["Year","Life expectancy ","Adult Mortality","Alcohol","Polio",
+    graph_list = ["Year","Adult Mortality","Alcohol","Polio",
                   "Total expenditure","Diphtheria ","Population",
                   "Income composition of resources","Schooling"]
     execute = dframe(filepath)
