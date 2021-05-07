@@ -24,13 +24,11 @@ class dframe:
         name and for each year it shows up for.
 
             Args:
-                user_input(str): country name the user inputs.
-                df (str): dataframe of the file
+                filepath (str): dataframe of the file
                 
             Returns:
                 user_input(str): name of the country
         """
-        self.user_input = user_input
         self.user_input = input("What country would you like to look at? ")
         self.df = pd.read_csv(filepath)
         
@@ -296,7 +294,7 @@ def main(filepath):
     functions outside of the class. 
     
     """
-    execute = dframe(filepath, user_input=0)
+    execute = dframe(filepath)
     execute.read_dframe()
     execute.check_input()
     execute.year()
