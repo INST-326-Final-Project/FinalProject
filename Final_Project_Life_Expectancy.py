@@ -19,7 +19,7 @@ class dframe:
             will be passed into the check_input function.
     """
     
-    def __init__(self, filepath, user_input=0):
+    def __init__(self, filepath):
         """ User inputs the country name. Will include each row with the country
         name and for each year it shows up for.
 
@@ -43,6 +43,8 @@ class dframe:
                   dataframe: dataframe of the csv file. This dataframe contains 
                 193 country names, alongside their associated factors. This is 
                 a requirement to run the file. 
+            
+            Side effects:
         """
         
         # prints the 15 rows from the dataframe for that country

@@ -3,6 +3,11 @@ import pytest
 from unittest import mock
 import builtins
 
+
+@pytest.fixture
+def afghan_test():
+    return dframe.year("Afghanistan")
+
 #Create the class
 class test_dframe:
     
@@ -20,7 +25,7 @@ class test_dframe:
         
         
     def test_year():
-
+        
 
     def test_polio():
         
@@ -48,7 +53,3 @@ class test_dframe:
 
     def test_calc_coefficient():
 
-#@pytest.fixture
-#def afghan_test():
-    #return dframe.year("Afghanistan")
-    #call in file handle?
