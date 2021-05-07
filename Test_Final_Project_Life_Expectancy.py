@@ -7,7 +7,8 @@ import builtins
 class test_dframe:
     
     def test___init__():
-        
+        with mock.patch("builtins.input", side_effect=["Algeria"]):
+            assert proj.__init__() == ("Algeria")
     
     def test_read_dframe():
     
