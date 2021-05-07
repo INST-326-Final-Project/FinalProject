@@ -11,7 +11,10 @@ class test_dframe:
             assert proj.__init__() == ("Algeria")
     
     def test_read_dframe():
-    
+        proj.read_dframe(self.df[self.df["Country"] == self.user_input])
+        outerr = capsys.readoutterr()
+        out = outerr.out
+        assert out == self.df[self.df["Country"] == self.user_input]
     
     def test_check_input():
 
