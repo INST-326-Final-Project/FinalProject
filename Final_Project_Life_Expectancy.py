@@ -2,11 +2,13 @@
 Script takes the users input and outputs information & data on a country. 
 """
 #Import necessary modules.
+from argparse import ArgumentParser
 import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as st
 import sys
 import seaborn as sns
+
 
 
 #Create the class
@@ -307,6 +309,22 @@ def main(filepath):
     execute.adult_mortality()
     execute.population()
     execute.calc_coefficient()
+
+def parse_args(arglist):
+    """ Parse command-line arguements.
+
+    Expect mandatory args:
+        filepath: a path to CSV file 
+    
+    Args:
+        arglist (list of str):
+    
+    Returns:
+    """
+    parser = ArgumentParser()
+    parser.add_argument("filepath", help= "path to Life Expectancy CSV file")
+    return parser.parse_args(arglist)
     
 if __name__ == "__main__":
-    main(sys.argv[1])
+    args = parse_args(sys.argv[1:])
+    main(args.filepath)
