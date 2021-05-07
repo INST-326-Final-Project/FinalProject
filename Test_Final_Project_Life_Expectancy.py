@@ -5,51 +5,54 @@ import builtins
 
 
 @pytest.fixture
-def afghan_test():
-    return dframe.year("Afghanistan")
+def algeria():
+    with mock.patch("builtins.input", side_effect=["Algeria"]):
+        instance1 = proj.dframe("NewLifeExpectancy.csv")
+    return instance1
 
-#Create the class
-class test_dframe:
+@pytest.fixture
+def bosnia_and_herzegovina():
+    with mock.patch("builtins.input", side_effect=["bosnia and herzegovina"]):
+        instance1 = proj.dframe("NewLifeExpectancy.csv")
+    return instance1
+
+@pytest.fixture
+def brazil():
+    with mock.patch("builtins.input", side_effect=["BRAZIL"]):
+        instance1 = proj.dframe("NewLifeExpectancy.csv")
+    return instance1
+
+def test_check_input(algeria, bosnia_and_herzegovina, brazil):
+    algeria.check_input()
+    assert algeria.user_input == "Algeria"
+    #bosnia_and_herzegovina
+        
+def test_year():
+        
+
+def test_polio():
     
-    def test___init__():
-        with mock.patch("builtins.input", side_effect=["Algeria"]):
-            assert proj.__init__() == ("Algeria")
-    
-    def test_read_dframe():
-        proj.read_dframe(self.df[self.df["Country"] == self.user_input])
-        outerr = capsys.readoutterr()
-        out = outerr.out
-        assert out == self.df[self.df["Country"] == self.user_input]
-    
-    def test_check_input():
-        
-        
-    def test_year():
-        
 
-    def test_polio():
-        
- 
-    def test_total_exp():
+def test_total_exp():
+
+
+def test_schooling():
+
+
+def test_income_comp():
+
+
+def test_alcohol():
 
     
-    def test_schooling():
+def test_diphtheria():
 
 
-    def test_income_comp():
-
- 
-    def test_alcohol():
-
-        
-    def test_diphtheria():
+def test_adult_mortality():
 
 
-    def test_adult_mortality():
+def test_population():
 
 
-    def test_population():
-
-
-    def test_calc_coefficient():
+def test_calc_coefficient():
 
