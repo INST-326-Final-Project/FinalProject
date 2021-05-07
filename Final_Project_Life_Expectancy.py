@@ -54,7 +54,8 @@ class dframe:
         """Check the users input and capitalize the country names. Uses the user 
         input to see what specific country/row it is working with. Will have 
         possible user input names for countries and will correct them if the 
-        capitalization is wrong.
+        capitalization is wrong. Fixes upper/lowercase syntax and for unique 
+        words.
 
             Args:
                 user_input(str): country name the user inputs. 
