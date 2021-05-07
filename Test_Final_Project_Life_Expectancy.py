@@ -17,7 +17,7 @@ class test_dframe:
         assert out == self.df[self.df["Country"] == self.user_input]
     
     def test_check_input():
-
+        
         
     def test_year():
 
