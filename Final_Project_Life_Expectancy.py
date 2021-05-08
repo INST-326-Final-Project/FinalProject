@@ -23,7 +23,7 @@ class dframe:
     
     def __init__(self, filepath):
         """ User inputs the country name. Will include each row with the country
-        name and for each year it shows up for. Initizliza dframe object.
+        name and for each year it shows up for. Initialize dframe object.
             
             Args:
                 filepath (str): dataframe of the file
