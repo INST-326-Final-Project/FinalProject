@@ -101,3 +101,10 @@
 ## (5/6/21) - Owen
 * Attempted to fix pytest fixture
 * Overall attempted to continue work on test scripting
+
+## (5/7/21) - Josh
+* Removed user_input where necessary, began pytest script. 
+
+## (5/7/21) - Leek
+* Created graph method, removed additional factors where necessary as well as function calls. 
+* Created for loop for graph_list list (helps with graph method). 
