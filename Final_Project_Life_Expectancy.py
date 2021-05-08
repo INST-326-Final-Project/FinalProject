@@ -23,16 +23,13 @@ class dframe:
     
     def __init__(self, filepath):
         """ User inputs the country name. Will include each row with the country
-        name and for each year it shows up for.
-
+        name and for each year it shows up for. Initizliza dframe object.
+            
             Args:
                 filepath (str): dataframe of the file
-                
-            Returns:
-                user_input(str): name of the country
         """
-        self.user_input = input("What country would you like to look at? ")
         self.df = pd.read_csv(filepath)
+        self.validate_country()
         
     
     def read_dframe(self):
@@ -51,7 +48,7 @@ class dframe:
         output = print(self.df[self.df["Country"] == self.user_input])
         
         return output
-    
+
     def check_input(self):
         """Check the users input and capitalize the country names. Uses the user 
         input to see what specific country/row it is working with. Will have 
@@ -89,6 +86,32 @@ class dframe:
                     final_title.append(i)
             final_title_output = " ".join(final_title)
             self.user_input = final_title_output
+
+    def validate_country(self):
+        """User inputs the country name and then check if users input is in the
+        dataset. Call method check_input to fix any capltalization issues. 
+        Iterate if country doesn't exist within dataset or incorrectly spelled.
+
+            Args:
+                user_input(str): country name the user inputs.
+
+            Returns:
+                print(str): Return the users input if the country name is 
+                incorrectly spelled, or doesn't exist within the dataset.  
+        
+            Side effects:
+                prints to stdout.
+        """
+        self.user_input = input("What country would you like to look at?")
+        while True:
+            self.check_input()# call method 
+            if (self.user_input in self.df["Country"].values): 
+                print(self.user_input)
+                break
+            else:
+                self.user_input = input("Country does not exist, try again.\n"
+                                    "What country would you like to look at?")
+
 
     def graph(self, graph):
         """Display a graph of a country's year factor influencing life expectancy. 
@@ -142,7 +165,6 @@ def main(filepath):
                   "Income composition of resources","Schooling"]
     execute = dframe(filepath)
     execute.read_dframe()
-    execute.check_input()
     for a in graph_list:
          execute.graph(a)
     execute.calc_coefficient()
@@ -150,13 +172,14 @@ def main(filepath):
 def parse_args(arglist):
     """ Parse command-line arguements.
 
-    Expect mandatory args:
-        filepath: a path to CSV file 
+        Expect mandatory args:
+            filepath: a path to CSV file.
     
-    Args:
-        arglist (list of str):
+        Args:
+            arglist (list of str): arguments from command-line.
     
-    Returns:
+        Returns:
+            namespace: parsed arguments as a namespace.
     """
     parser = ArgumentParser()
     parser.add_argument("filepath", help= "path to Life Expectancy CSV file")

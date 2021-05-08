@@ -2,6 +2,23 @@ import Final_Project_Life_Expectancy as proj
 import pytest
 from unittest import mock
 import builtins
+import pandas as pd
+
+
+class otherclass(proj.dframe):
+    """ Testing validate_country, call separate from the init
+    """
+    def __init__(self, filepath):
+        """ User inputs the country name. Will include each row with the country
+        name and for each year it shows up for.
+
+        Args:
+            filepath (str): dataframe of the file
+            
+        Returns:
+            user_input(str): name of the country
+        """
+        self.df = pd.read_csv(filepath)
 
 
 @pytest.fixture
@@ -29,4 +46,10 @@ def test_check_input(algeria, bosnia_and_herzegovina, brazil):
     # assert bosnia_and_herzegovina.check_input == "Bosnia and Herzegovina" #Prof said to fix this Josh
     brazil.check_input()
     assert brazil.check_input == "Brazil"
-        
+
+def test_validate_country():
+    with mock.patch("builtins.input", side_effect=["South Korea", "Brazil"]):
+        instance = otherclass("NewLifeExpectancy.csv")
+        instance.validate_country()
+        assert instance.user_input == "Brazil"
+    
