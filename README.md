@@ -117,3 +117,8 @@
 * Added in my two methods to the main group file
 * Made methods lc_range() and line_chart()
 * Created a test file for parse_args
+
+## (5/9/21) - Josh
+* Fix the read_dframe method to remove the print
+* Fix docstrings
+* Work on pytest
