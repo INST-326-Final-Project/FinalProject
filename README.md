@@ -111,6 +111,7 @@
 
 ## (5/9/21 - Leek
 * Added class fakepair & other testing methods to Test_Final_Project_Life_Expectancy.py 
+* Updated Project Presentation. 
 
 ## (5/9/21) - Owen
 * Added in my two methods to the main group file
