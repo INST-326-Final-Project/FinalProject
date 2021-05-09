@@ -104,7 +104,7 @@ class dframe:
                 break
             else:
                 self.user_input = input("Country does not exist, try again.\n"
-                                    "What country would you like to look at?")
+                                    "What country would you like to look at? ")
 
     def lc_range(self):
         """
