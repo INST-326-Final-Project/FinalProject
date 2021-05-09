@@ -74,3 +74,11 @@ def test_graph(brazil, monkeypatch):
     assert isinstance(f.args[0], pd.DataFrame)
     assert isinstance(f.kwargs["x_vars"], list) #checking the kwargs this time. 
 
+def test_parse_args():
+    with pytest.raises(SystemExit):
+        proj.parse_args(["a", "b"])
+    with pytest.raises(SystemExit):
+        proj.parse_args([])
+    var = proj.parse_args(["a"])
+    assert var.filepath == "a"
+    

@@ -106,12 +106,55 @@ class dframe:
         while True:
             self.check_input()# call method 
             if (self.user_input in self.df["Country"].values): 
-                print(self.user_input)
                 break
             else:
                 self.user_input = input("Country does not exist, try again.\n"
                                     "What country would you like to look at?")
 
+    def lc_range(self):
+        """
+        Finds the range of years to include in the line_chart method
+        
+        Args: 
+            user_input(str): Country user input
+        
+        Returns:
+            yrs_wanted (int): A valid range of years the user wants to analyze
+        """
+        
+        yrs_allowed = self.df[self.df["Country"] == self.user_input]["Country"].count()
+        input_str=("Next, we will create a chart of Life Expectancy over the"
+                   " years.\n For this chart, how many years would back you "
+                   f"like to include?\n The limit is {yrs_allowed} years: \n")
+        if self.user_input in self.df["Country"].values:
+            while True:
+                try:
+                    yrs_wanted = int(input(input_str))
+                    return yrs_wanted
+                except ValueError:
+                    print(f"Please enter an integer that is less than or "
+                          f"equal to {yrs_allowed} only.")
+                
+    def line_chart(self):
+        """
+        Displays a line chart of the country's life expectancy over the years
+        
+        Args:
+            user_input(str): The name of the country being analzed
+            
+        Returns:
+            A line chart of the life expectancy of the years
+        
+        Side effects:
+            Prints the line chart of life expectancy
+        """
+        yrs_wanted = self.lc_range()
+        temp_df = self.df[self.df["Country"] == self.user_input]
+        temp_df_2 = temp_df[["Country", "Year", "Life expectancy "]]
+        yrs_wanted_df = temp_df_2.iloc[:yrs_wanted + 1]
+            
+        yrs_wanted_df.plot.line(x = "Year", y = "Life expectancy ")
+        plt.show()
 
     def graph(self, graph):
         """Display a graph of a country's year factor influencing life expectancy. 
@@ -165,6 +208,7 @@ def main(filepath):
                   "Income composition of resources","Schooling"]
     execute = dframe(filepath)
     execute.read_dframe()
+    execute.line_chart()
     for a in graph_list:
          execute.graph(a)
     execute.calc_coefficient()

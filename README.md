@@ -111,3 +111,8 @@
 
 ## (5/9/21 - Leek
 * Added class fakepair & other testing methods to Test_Final_Project_Life_Expectancy.py 
+
+## (5/9/21) - Owen
+* Added in my two methods to the main group file
+* Made methods lc_range() and line_chart()
+* Created a test file for parse_args
