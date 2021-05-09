@@ -54,6 +54,12 @@ def test_validate_country():
         assert instance.user_input == "Brazil"
 
 class fakepair:
+    """Testing graph method. 
+    
+    Attributes:
+            args(list): position argument, checks if the position of the parameter is in the correct position. 
+            kwargs(dict): Keyword argument, checks to see if the instance of the keyword arguments is in the correct place. 
+    """
     def __init__(self):
         self.args = []
         self.kwargs = { }
