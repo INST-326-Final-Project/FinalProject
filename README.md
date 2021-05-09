@@ -108,3 +108,6 @@
 ## (5/7/21) - Leek
 * Created graph method, removed additional factors where necessary as well as function calls. 
 * Created for loop for graph_list list (helps with graph method). 
+
+## (5/9/21 - Leek
+* Added class fakepair & other testing methods to Test_Final_Project_Life_Expectancy.py 
