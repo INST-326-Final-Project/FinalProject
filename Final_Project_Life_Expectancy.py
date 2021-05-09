@@ -97,7 +97,7 @@ class dframe:
             Side effects:
                 prints to stdout.
         """
-        self.user_input = input("What country would you like to look at?")
+        self.user_input = input("What country would you like to look at? ")
         while True:
             self.check_input()# call method 
             if (self.user_input in self.df["Country"].values): 
