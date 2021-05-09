@@ -45,9 +45,8 @@ class dframe:
         """
         
         # prints the 15 rows from the dataframe for that country
-        output = print(self.df[self.df["Country"] == self.user_input])
+        print(self.df[self.df["Country"] == self.user_input])
         
-        return output
 
     def check_input(self):
         """Check the users input and capitalize the country names. Uses the user 
@@ -58,10 +57,6 @@ class dframe:
 
             Args:
                 user_input(str): country name the user inputs. 
-        
-            Returns:
-                print(str): Return the users input if the country name is 
-                incorrectly spelled, or doesn't exist within the dataset.  
         
             Side effects:
                 prints to stdout.   
