@@ -73,4 +73,4 @@ def test_graph(brazil, monkeypatch):
     brazil.graph("Polio")
     assert isinstance(f.args[0], pd.DataFrame)
     assert isinstance(f.kwargs["x_vars"], list) #checking the kwargs this time. 
-    assert isinstance(f.args[0], pd.DataFrame.unique) 
+
