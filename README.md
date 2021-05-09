@@ -110,7 +110,7 @@
 * Created for loop for graph_list list (helps with graph method). 
 
 ## (5/9/21 - Leek
-* Added class fakepair & other testing methods to Test_Final_Project_Life_Expectancy.py 
+* Added class fakepair & other testing methods (test_graph, donothing) to Test_Final_Project_Life_Expectancy.py 
 * Updated Project Presentation. 
 
 ## (5/9/21) - Owen
