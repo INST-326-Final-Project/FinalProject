@@ -52,4 +52,25 @@ def test_validate_country():
         instance = otherclass("NewLifeExpectancy.csv")
         instance.validate_country()
         assert instance.user_input == "Brazil"
+
+class fakepair:
+    def __init__(self):
+        self.args = []
+        self.kwargs = { }
     
+    def pairpair(self, *args, **kwargs):
+        self.args = args
+        self.kwargs = kwargs
+        
+def donothing():
+    pass
+
+def test_graph(brazil, monkeypatch):
+    monkeypatch.setattr(proj.plt,"show", donothing) #replace attribute show with donothing
+
+    f = fakepair()
+    monkeypatch.setattr(proj.sns, "pairplot", f.pairpair)  
+    brazil.graph("Polio")
+    assert isinstance(f.args[0], pd.DataFrame)
+    assert isinstance(f.kwargs["x_vars"], list) #checking the kwargs this time. 
+    assert isinstance(f.args[0], pd.DataFrame.unique) 
