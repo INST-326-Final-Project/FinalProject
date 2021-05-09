@@ -42,6 +42,7 @@ class dframe:
                 a requirement to run the file. 
             
             Side effects:
+                prints to stdout.
         """
         
         # prints the 15 rows from the dataframe for that country
