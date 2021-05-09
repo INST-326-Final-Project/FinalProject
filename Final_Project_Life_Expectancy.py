@@ -124,8 +124,8 @@ class dframe:
         
         yrs_allowed = self.df[self.df["Country"] == self.user_input]["Country"].count()
         input_str=("Next, we will create a chart of Life Expectancy over the"
-                   " years.\n For this chart, how many years would back you "
-                   f"like to include?\n The limit is {yrs_allowed} years: \n")
+                   " years.\nFor this chart, how many years would back you "
+                   f"like to include?\nThe limit is {yrs_allowed} years:\n")
         if self.user_input in self.df["Country"].values:
             while True:
                 try:
