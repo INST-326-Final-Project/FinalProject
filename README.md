@@ -142,6 +142,7 @@
 ## (5/10/21)  - Owen
 * Fixed docstrings for methods
 * Finalized my methods, test script, and docstrings
+* Test push for Josh
 
 ## (5/10/21) - Josh
 * Docstrings and fixed my test script
