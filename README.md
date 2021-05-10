@@ -109,7 +109,17 @@
 * Created graph method, removed additional factors where necessary as well as function calls. 
 * Created for loop for graph_list list (helps with graph method). 
 
-## (5/9/21 - Leek
+## (5/7/21) - Joon 
+* Created validate country method, began pytest script.
+* Completed parse arg.
+* Worked on docstrings.
+
+## (5/8/21) - Joon
+* Completed validate country method.
+* Fixed init and main method. 
+* Completed pytest script.
+
+## (5/9/21) - Leek
 * Added class fakepair & other testing methods (test_graph, donothing) to Test_Final_Project_Life_Expectancy.py 
 * Updated Project Presentation. 
 
@@ -122,3 +132,6 @@
 * Fix the read_dframe method to remove the print
 * Fix docstrings
 * Work on pytest
+
+## (5/11/21) - Joon
+* Fixed docstrings
