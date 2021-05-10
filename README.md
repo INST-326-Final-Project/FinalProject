@@ -135,3 +135,6 @@
 
 ## (5/11/21) - Joon
 * Fixed docstrings
+
+## (5/11/21)  - Owen
+* Fixed docstrings for methods
