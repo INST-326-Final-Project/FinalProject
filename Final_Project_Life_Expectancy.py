@@ -101,6 +101,9 @@ class dframe:
         """
         Finds the range of years to include in the line_chart method
         
+        Args:
+                user_input(str): country name the user inputs. 
+        
         Returns:
             yrs_wanted (int): A valid range of years the user wants to analyze
         """
@@ -121,6 +124,9 @@ class dframe:
     def line_chart(self):
         """
         Displays a line chart of the country's life expectancy over the years
+        
+        Args:
+                user_input(str): country name the user inputs. 
         
         Side effects:
             Prints the line chart of life expectancy
