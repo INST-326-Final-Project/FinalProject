@@ -77,9 +77,10 @@ class dframe:
             self.user_input = final_title_output
 
     def validate_country(self):
-        """User inputs the country name and then check if users input is in the
-        dataset. Call method check_input to fix any capltalization issues. 
-        Iterate if country doesn't exist within dataset or incorrectly spelled.
+        """The user inputs the country name and then check if the user's input 
+        is in the dataset. Call method check_input to fix any capitalization 
+        issues. Iterate if the country doesn't exist within the dataset or is 
+        incorrectly spelled.
 
             Args:
                 user_input(str): country name the user inputs. 
