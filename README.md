@@ -138,3 +138,6 @@
 
 ## (5/11/21)  - Owen
 * Fixed docstrings for methods
+
+## (5/11/21) - Josh
+* Docstrings and fixed my test script
