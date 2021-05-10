@@ -138,10 +138,7 @@ class dframe:
         Years range from 2000 to 2015 for each country.  
         
         Args:
-            user_input(str): country name the user inputs.
-            
-        Returns:
-            A graph of the regression betweeen year and life expectency.
+            graph(str): country name the user inputs.
         
         Side effects:
             outputs graph to stdout.
@@ -156,9 +153,6 @@ class dframe:
         regression model for each factor in the csv file. Results will include 
         respective p-values (values thata re less than 0.05 are considered 
         statistically significant).
-        
-        Args:
-            user_input(str): country name the user inputs.
         
         Returns:
             a linear regression statistical model of each factor.
