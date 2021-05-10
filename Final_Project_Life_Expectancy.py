@@ -127,9 +127,6 @@ class dframe:
         """
         Displays a line chart of the country's life expectancy over the years
         
-        Returns:
-            A line chart of the life expectancy of the years
-        
         Side effects:
             Prints the line chart of life expectancy
         """
