@@ -6,17 +6,13 @@ import pandas as pd
 
 
 class otherclass(proj.dframe):
-    """ Testing validate_country, call separate from the init
+    """ Testing validate_country, call separate from the init.
     """
     def __init__(self, filepath):
-        """ User inputs the country name. Will include each row with the country
-        name and for each year it shows up for.
+        """ Initializa otherclass object.
 
         Args:
-            filepath (str): dataframe of the file
-            
-        Returns:
-            user_input(str): name of the country
+            filepath (str): dataframe of the file 
         """
         self.df = pd.read_csv(filepath)
 
