@@ -89,11 +89,7 @@ class dframe:
         Iterate if country doesn't exist within dataset or incorrectly spelled.
 
             Args:
-                user_input(str): country name the user inputs.
-
-            Returns:
-                print(str): Return the users input if the country name is 
-                incorrectly spelled, or doesn't exist within the dataset.  
+                user_input(str): country name the user inputs. 
         
             Side effects:
                 prints to stdout.
