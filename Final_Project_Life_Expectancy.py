@@ -28,12 +28,13 @@ class dframe:
             Args:
                 filepath (str): dataframe of the file
         """
+        
         self.df = pd.read_csv(filepath)
         self.validate_country()
         
     
     def read_dframe(self):
-        """Method that reads in the "cleaned_life_expectancydf.csv" file and 
+        """Method that reads in the "NewLifeExpectancy.csv" file and 
         creates a dataframe with pandas based on the dataset.
             
             Side effects:
@@ -50,9 +51,6 @@ class dframe:
         possible user input names for countries and will correct them if the 
         capitalization is wrong. Fixes upper/lowercase syntax and for unique 
         words.
-
-            Args:
-                user_input(str): country name the user inputs. 
         
             Side effects:
                 prints to stdout.   
@@ -122,9 +120,6 @@ class dframe:
     def line_chart(self):
         """
         Displays a line chart of the country's life expectancy over the years
-        
-        Returns:
-            A line chart of the life expectancy of the years
         
         Side effects:
             Prints the line chart of life expectancy
