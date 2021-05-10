@@ -43,9 +43,9 @@ def test_check_input(algeria, bosnia_and_herzegovina, brazil):
     algeria.check_input()
     assert algeria.user_input == "Algeria"
     bosnia_and_herzegovina.check_input()
-    assert bosnia_and_herzegovina == "Bosnia and Herzegovina"
+    assert bosnia_and_herzegovina.user_input == "Bosnia and Herzegovina"
     brazil.check_input()
-    assert brazil.check_input == "Brazil"
+    assert brazil.user_input == "Brazil"
 
 def test_validate_country():
     with mock.patch("builtins.input", side_effect=["South Korea", "Brazil"]):
