@@ -42,8 +42,8 @@ def brazil():
 def test_check_input(algeria, bosnia_and_herzegovina, brazil):
     algeria.check_input()
     assert algeria.user_input == "Algeria"
-    # bosnia_and_herzegovina.check_input()
-    # assert bosnia_and_herzegovina.check_input == "Bosnia and Herzegovina" #Prof said to fix this Josh
+    bosnia_and_herzegovina.check_input()
+    assert bosnia_and_herzegovina == "Bosnia and Herzegovina"
     brazil.check_input()
     assert brazil.check_input == "Brazil"
 
