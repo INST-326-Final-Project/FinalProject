@@ -6,7 +6,7 @@ import pandas as pd
 
 
 class otherclass(proj.dframe):
-    """ Testing validate_country, call separate from the init.
+    """ Testing validate_country.
     """
     def __init__(self, filepath):
         """ Initializa otherclass object.
