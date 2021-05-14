@@ -82,9 +82,6 @@ class dframe:
         issues. Iterate if the country doesn't exist within the dataset or is 
         incorrectly spelled.
 
-            Args:
-                user_input(str): country name the user inputs. 
-        
             Side effects:
                 prints to stdout.
         """
@@ -101,11 +98,11 @@ class dframe:
         """
         Finds the range of years to include in the line_chart method
         
-        Args:
+            Args:
                 user_input(str): country name the user inputs. 
         
-        Returns:
-            yrs_wanted (int): A valid range of years the user wants to analyze
+            Returns:
+                yrs_wanted (int): A valid range of years the user wants to analyze
         """
         
         yrs_allowed = self.df[self.df["Country"] == self.user_input]["Country"].count()
@@ -125,11 +122,11 @@ class dframe:
         """
         Displays a line chart of the country's life expectancy over the years
         
-        Args:
+            Args:
                 user_input(str): country name the user inputs. 
         
-        Side effects:
-            Prints the line chart of life expectancy
+            Side effects:
+                Prints the line chart of life expectancy
         """
         yrs_wanted = self.lc_range()
         temp_df = self.df[self.df["Country"] == self.user_input]
@@ -143,11 +140,11 @@ class dframe:
         """Display a graph of a country's year factor influencing life expectancy. 
         Years range from 2000 to 2015 for each country.  
         
-        Args:
-            graph(str): country name the user inputs.
+            Args:
+                graph(str): country name the user inputs.
         
-        Side effects:
-            outputs graph to stdout.
+            Side effects:
+                outputs graph to stdout.
         """
         graph_df = self.df[self.df["Country"] == self.user_input]  
         sns.pairplot(graph_df, x_vars=[graph],y_vars=["Life expectancy "], kind='reg')
@@ -160,10 +157,10 @@ class dframe:
         respective p-values (values thata re less than 0.05 are considered 
         statistically significant).
         
-        Returns:
-            a linear regression statistical model of each factor.
+            Returns:
+                a linear regression statistical model of each factor.
             
-        Side effects:
+            Side effects:
                 outputs table to stdout. 
         """
         calc_df = self.df[self.df["Country"] == self.user_input] 
@@ -178,7 +175,7 @@ class dframe:
 def main(filepath):
     """Main function: Will call the class dframe and 
     functions outside of the class. 
-    
+
     """
     graph_list = ["Year","Adult Mortality","Alcohol","Polio",
                   "Total expenditure","Diphtheria ","Population",

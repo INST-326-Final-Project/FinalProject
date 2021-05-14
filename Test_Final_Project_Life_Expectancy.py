@@ -52,6 +52,10 @@ def test_validate_country():
         instance2 = otherclass("NewLifeExpectancy.csv")
         instance2.validate_country()
         assert instance2.user_input == "Bosnia and Herzegovina"
+    with mock.patch("builtins.input", side_effect=["Wakanda", "Afghanistan"]):
+        instance3 = otherclass("NewLifeExpectancy.csv")
+        instance3.validate_country()
+        assert instance3.user_input == "Afghanistan"
 
 class fakepair:
     """Testing graph method. 
